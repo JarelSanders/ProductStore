@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* variables */
+:root {
+    /* --primary: #ffc636;
+    --secondary: #0a0b5b; */
+    /* --header: rgb(128, 195, 254); */
+    --header: #302b27;
+    --graybackground: #1e1e1e;
+    /* --graybackground: #4C2A85; */
+    --fontcolor: #BCEDF6
+  }
+  
+  /* fonts */
+  @font-face {
+    /* font-family: "rubik-regular"; */
+    /* src: url("assets/fonts/Rubik-Regular.ttf"); */
+    font-family: 'Roboto Condensed', sans-serif;
+    src: url('../src/assets/RobotoCondensed-Bold.ttf');
+   
+  }
+  
+  /* base styles */
+  
+  body {
+    background-color: var(--graybackground);
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--fontcolor);    
+  }
+
+  h1,h4{
+    color: var(--fontcolor);
+  }
+
+  p{
+    color: var(--fontcolor);
+  }
+
+
+
+
+  /* small tablet styles */
+@media screen and (min-width: 620px) {
+}
+
+/* large tablets and laptops sty;es */
+@media all and (min-width: 450px) {
+  body {
+
+  }
+
+
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1200px) {
+}

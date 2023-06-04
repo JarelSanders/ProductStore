@@ -1,0 +1,153 @@
+/* header */
+header{
+    background-color: var(--header);
+    margin-top: -10px;
+    margin-bottom: 5px;
+
+}
+
+
+.navcollaps{
+    color: var(--fontcolor) !important;
+}
+.link-selection{
+    display: flex;
+    justify-content: center;
+}
+.link-selection:hover{
+    background: blue;
+}
+header a{
+    text-decoration: none;
+    /* color: black */
+    color: var(--fontcolor);
+}
+
+#logo{
+    font-weight: bolder;
+    font-size: 1.3em;
+    padding-left: 8px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+#storeheader{
+    color: blue;
+    /* text-transform: ; */
+    font-size: 1.3rem;
+}
+/* https://www.youtube.com/watch?v=OFKBep95lb4 */
+
+
+
+.custom-toggler.navbar-toggler {
+    /* border-color: blue; */
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+.login-container{
+    background-color: var(--header) ;
+    margin-top: 130px;
+    height: 60vh;
+    border-radius: 50px;
+    border: 5px solid var(--fontcolor);
+}
+
+.login-contents{
+    /* border: 5px solid green; */
+    padding-top: 20%;
+    padding-bottom: 25%;
+    /* text-align: center; */
+}
+
+h1{
+
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+input{
+    border-radius: 5px;
+    color: blue !important;
+    margin-top: 0;
+    padding-top: 0;
+    /* margin-left: 22%; */
+    /* border-bottom: 3px solid red; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    /* align-items: center; */
+    background-color: var(--header);
+}
+
+input:focus{
+    background-color: var(--graybackground);
+}
+
+label{
+    margin: 0;
+}
+
+.button-color{background: blue;}
+
+.form-check{
+    /* border: 5px solid yellow; */
+    display: flex;
+    justify-content: center;
+    /* width: 50vw; */
+}
+
+#signup{
+    display: flex;
+    position: relative;
+    bottom: -65px;
+    left: 122px;
+    /* right: 1px; */
+    /* margin-right: 50px; */
+    font-size: 1.2em;
+    /* margin-bottom: 115px; */
+    /* border: 5px solid blue; */
+
+
+}
+
+#rememberme{
+    margin-left: 15px;
+}
+
+#check1{
+    /* border: 80px solid red; */
+    width: 40px;
+    /* justify-content: center; */
+    margin-left: 208px;
+    margin-top: 5px;
+}
+
+
+.form-group{
+    /* border: 6px solid blue; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    margin-left: 21%;
+}
+
+.form-check{
+    /* border: 5px solid green; */
+}
+
+#forgot-password{
+
+    margin-left: 25px;
+}

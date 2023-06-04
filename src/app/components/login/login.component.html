@@ -1,0 +1,55 @@
+<!-- <p>login works!</p> -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a href="http://" target="_blank" rel="noopener noreferrer" id="logo" class="active">
+      Product
+      <span id="storeheader">
+        Store
+      </span>
+    </a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active navcollaps link-selection"  href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link navcollaps link-selection" routerLink="/shoppingcart">Shopping Cart</a>
+        <a class="nav-item nav-link navcollaps link-selection" routerLink="/sales">Sales</a>
+        <a class="nav-item nav-link navcollaps link-selection" routerLink="/products">Products</a>
+        <a class="nav-item nav-link navcollaps link-selection"  routerLink="/login/">Login</a>
+      </div>
+    </div>
+  </nav>
+  
+</header>
+
+<div class="login-container">
+    <h1>Login</h1>
+    <div class=" login-contents">
+      <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="loginObj.email" name="email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" placeholder="Password" [(ngModel)]="loginObj.password" name="password" autocomplete="on">
+            </div>
+            <div class="form-check">
+              <button type="submit" class="btn btn-primary" (click)="onLogin()">Login</button>
+              <input type="checkbox" class="form-check-input" id="check1">
+              <label class="form-check-label" for="exampleCheck1" id="rememberme">Remember me</label>
+              <!-- <button type="submit" class="btn btn-primary">Login</button> -->
+
+            </div>
+            <!-- <button type="submit" class="btn btn-primary">Login</button> -->
+            <div id="signup">
+                <a routerLink="/signup">Sign Up</a>
+                <a href="http://" routerLink="/forgot-password" id="forgot-password"> Forgort Password</a>
+            </div>
+          </form>
+    </div>      
+<!-- <a href="http://" routerLink="/forgot-password" id="forgot-password"> forgort Password</a> -->
+</div>
+

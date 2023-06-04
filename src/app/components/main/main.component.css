@@ -1,0 +1,436 @@
+/* header */
+header{
+    background-color: var(--header);
+    margin-top: -10px;
+    margin-bottom: 5px;
+
+}
+
+
+.navcollaps{
+    color: var(--fontcolor) !important;
+}
+.link-selection{
+    display: flex;
+    justify-content: center;
+}
+.link-selection:hover{
+    background: blue;
+}
+header a{
+    text-decoration: none;
+    /* color: black */
+    color: var(--fontcolor);
+}
+
+#logo{
+    font-weight: bolder;
+    font-size: 1.3em;
+    padding-left: 8px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+#storeheader{
+    color: blue;
+    /* text-transform: ; */
+    font-size: 1.3rem;
+}
+/* https://www.youtube.com/watch?v=OFKBep95lb4 */
+
+
+
+.custom-toggler.navbar-toggler {
+    /* border-color: blue; */
+    background-color: blue;
+}
+
+/* scroll snap */
+/* .items div{
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    border: 5px solid green;
+    width: 100%;
+    white-space: nowrap;
+} */
+
+/* changing header image */
+.section_top{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    background-image: url('/assets/sale/sale.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s 5 ease-in-out;
+}
+
+.content{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+.content a{
+    /* background: #85c1ee;
+    padding: 10px 24px; */
+}
+
+.items a{
+    /* padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    border: 5px solid green;
+
+    padding: 0;
+    width: fit-content;     */
+}
+
+.items-feature{
+    /* width: 100%;
+    height: 100%; */
+}
+
+.items{
+    /* display: flex;
+    gap: 10px;
+    overflow-x:scroll;
+
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    height: 100%;
+    width: 100%;    */
+}
+
+.a{
+    /* width: 100%; */
+    /* position: relative;
+    animation: mymove 90s infinite;
+    animation-delay: 2s;
+    animation-timing-function: linear; */
+
+}
+
+
+
+.featured-container{
+    /* border: 5px solid red;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    width: 100%;
+    overflow-y: hidden; */
+}
+
+
+.a img{
+    border: 5px solid blue;
+    height: 350px;
+    margin: 0;
+    padding: 0px;
+    background-size: cover;    
+}
+
+/* .featured-container .feature-cards{
+    height: 390px;
+    width: 100%;
+    max-width: 100%;
+} */
+
+
+
+
+
+
+
+.sections{
+
+    margin: 20px 0;
+
+}
+
+
+.section-items{
+    /* border: 8px solid red;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 43%;
+    gap: 1%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+    background-color: white; */
+}
+
+.li-item{
+
+    /* margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    padding: 0 29px;
+    padding-left: 0; */
+
+ 
+
+}
+
+/* li img{ */
+
+    /* height: 149px;
+
+    width: 176.19px;
+    border: 1.5px solid blue;
+
+    margin-inline: auto;
+    padding: 0 6px; 
+    border-radius: 3px; */
+    
+/* } */
+
+/* li a{ */
+  /* background-color: green; */
+/* } */
+
+section a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  color: var(--header);
+  font-weight: bolder;
+}
+
+li  > a{
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px; */
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.section-items-container{
+  /* overflow-x: scroll;    */
+  /* overflow-y: hidden; */
+  /* inline-size: min(100% - 4rem, 70rem); */
+  height: 250px;
+}
+
+a span{
+  color: var(--fontcolor);
+}
+
+/* https://www.youtube.com/watch?v=3yfswsnD2sw */
+
+.snap-inline{
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 1rem;
+    
+}
+
+.snap-inline > * {
+  scroll-snap-align:  start;
+  /* animation-name: slide-then-hide;
+  animation-duration: 52s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards; */
+}
+
+@keyframes change
+  {
+  0%{
+    background-image: url('/assets/games/new/Dragon\ Ball\ Z\ Kakarot');
+  }
+  20%{
+    background-image: url('/assets/games/used/Burnout\ 3\ Takedown.png');
+  }
+  40%{
+    background-image: url('/assets/gaming console/used/Nintendo Wii Console');
+  }
+  60%{
+    background-image: url('/assets/sale/sale.jpg');
+  }
+} 
+ 
+.wrapper {
+  display: grid;
+  width: 100%;
+  gap: 35%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  grid-auto-flow: column;
+  grid-auto-columns: 43%;
+  overscroll-behavior-inline: contain;
+  /* justify-content: space-around; */
+  scroll-snap-type: x mandatory;
+  max-height: fit-content;
+}
+  
+.card {
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  /* left: 50px; */
+  scroll-snap-align: start;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  /* border: 5px solid red; */
+}
+
+.card:hover {
+  transform: translateY(20px);
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+.card .info h1 {
+  margin: 0px;
+  font-size: 1.1rem;
+  /* border: 3px solid red; */
+  width:250px;
+  margin: 0 auto;
+  opacity: 100%;
+  text-align: center;
+}
+
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.card .info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.card .info button:hover {
+  background: dodgerblue;
+  color: white;
+}
+
+
+
+/* add a slight gray/white hover color over the footer icons */
+/* add a slight gray/white hover color over the footer icons */
+/* add a slight gray/white hover color over the footer icons */
+/* add a slight gray/white hover color over the footer icons */
+/* add a slight gray/white hover color over the footer icons */
+/* add a slight gray/white hover color over the footer icons */
+/* add a slight gray/white hover color over the footer icons */
+/* add a slight gray/white hover color over the footer icons */
+/* add a slight gray/white hover color over the footer icons */
+
+li a{
+  color: blue;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  line-height: 2.1;
+}
+
+a span{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* footer */
+footer{
+  background: var(--header);
+  align-content: center;
+  height: 45vh;
+}
+
+h6{
+  position: relative;
+  bottom: 21px
+}
+
+.footerIcons{
+  height: 9vh ;
+  width: 17vw;
+  margin-top: 12px;
+  margin-right: 18px;
+}
+
+.contact{
+  width: 50%;
+   height: 100%;
+   float: left;
+}
+
+.social{
+  width: 50%;
+  height: 100%;
+  margin-left: 25%;
+  padding-bottom: 50px;
+  text-align: center;
+}
