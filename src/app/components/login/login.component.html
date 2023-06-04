@@ -24,32 +24,35 @@
 </header>
 
 <div class="login-container">
-    <h1>Login</h1>
-    <div class=" login-contents">
-      <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="loginObj.email" name="email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" placeholder="Password" [(ngModel)]="loginObj.password" name="password" autocomplete="on">
-            </div>
-            <div class="form-check">
-              <button type="submit" class="btn btn-primary" (click)="onLogin()">Login</button>
-              <input type="checkbox" class="form-check-input" id="check1">
-              <label class="form-check-label" for="exampleCheck1" id="rememberme">Remember me</label>
-              <!-- <button type="submit" class="btn btn-primary">Login</button> -->
+  <h1>Login</h1>
+  <div class=" login-contents">
+    <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+      <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <!-- <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="loginObj.email" name="email" required="true" formControlName="email"> -->
+          <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" required="true" formControlName="email">
 
-            </div>
-            <!-- <button type="submit" class="btn btn-primary">Login</button> -->
-            <div id="signup">
-                <a routerLink="/signup">Sign Up</a>
-                <a href="http://" routerLink="/forgot-password" id="forgot-password"> Forgort Password</a>
-            </div>
-          </form>
-    </div>      
-<!-- <a href="http://" routerLink="/forgot-password" id="forgot-password"> forgort Password</a> -->
+          <small id="emailHelp" class="orm-text text-muted">We'll never share your email with anyone else.</small>
+          <div class="error">Email is required</div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <!-- <input type="password" class="form-control" placeholder="Password" [(ngModel)]="loginObj.password" name="password" autocomplete="on" formControlName="password"> -->
+        <input type="password" class="form-control" id="password" placeholder="Password" name="password" autocomplete="on" formControlName="password" ngModel maxlength="2" minlength="8">
+
+      </div>
+      <div class="form-check">
+        <button type="submit" class="btn btn-primary" (click)="onLogin()">Login</button>
+        <input type="checkbox" class="form-check-input" id="check1">
+        <label class="form-check-label" for="exampleCheck1" id="rememberme">Remember me</label>
+        <button class="btn btn-primary">Login</button>
+      </div>
+      <!-- <button type="submit" class="btn btn-primary">Login</button> -->
+      <div id="signup">
+        <a routerLink="/signup">Sign Up</a>
+        <a href="http://" routerLink="/forgot-password" id="forgot-password"> Forgort Password</a>
+      </div>
+    </form>
+  </div>      
 </div>
 

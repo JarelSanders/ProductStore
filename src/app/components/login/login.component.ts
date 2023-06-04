@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+// import { FormGroup } from '@angular/forms';
+// FormControl
 
 @Component({
   selector: 'app-login',
@@ -11,9 +14,13 @@ export class LoginComponent implements OnInit{
     email: '',
     password: ''
   }
-  // https://www.youtube.com/watch?v=38JJ0hDQoos
 
-  // https://www.youtube.com/watch?v=NUHHbzau_9M&list=PL9_OU-1M9E_sjaUPfH3FIp8GtJrhJhTb8&index=2
+  loginForm: FormGroup = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.minLength(4)]),
+    password: new FormControl('', [Validators.required, Validators.minLength(4) ])
+  });
+
+
   constructor(){}
 
   ngOnInit(): void {
@@ -23,6 +30,16 @@ export class LoginComponent implements OnInit{
     }
   }
 
+
+  loginUser(){
+    console.warn(this.loginForm);
+    let pwdChecked: number= (<HTMLInputElement>document.getElementById('password')).value.length;
+
+    pwdChecked < 6 ? alert('correct length')  : 'Password Incorrect'
+
+    
+    
+  }
   
   onLogin(){
     // debugger
