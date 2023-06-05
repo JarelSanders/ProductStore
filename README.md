@@ -1,5 +1,5 @@
 # ProductStore
-
+This is my first full stack basic product store site that utilizes custom API's
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
 ## Development server
