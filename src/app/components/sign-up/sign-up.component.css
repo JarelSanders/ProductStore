@@ -28,7 +28,10 @@ header a{
     font-size: 1.3em;
     padding-left: 8px;
     padding-bottom: 3px;
+    /* margin-right: -500px !important; */
     text-transform: uppercase;
+    /* border: 5px solid green ; */
+    padding-top: 10px;
 }
 
 #storeheader{
@@ -38,12 +41,23 @@ header a{
 }
 /* https://www.youtube.com/watch?v=OFKBep95lb4 */
 
+.a{
+    /* border: 5px solid green; */
+    /* padding-top: 100px; */
+}
+
+
+
+
 
 
 .custom-toggler.navbar-toggler {
     /* border-color: blue; */
     background-color: blue;
 }
+
+
+
 
 
 
@@ -72,7 +86,7 @@ h1{
 
 input{
     border-radius: 5px;
-    color: blue !important;
+    /* color: blue !important; */
     margin-top: 0;
     padding-top: 0;
     /* margin-left: 22%; */
