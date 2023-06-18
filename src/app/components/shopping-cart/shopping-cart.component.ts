@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./shopping-cart.component.css']
 })
 export class ShoppingCartComponent {
+subtotal: number = 0.07
+tax: number = 0.07
+shipping: number = 0.15
 
 }

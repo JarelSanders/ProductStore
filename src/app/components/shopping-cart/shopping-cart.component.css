@@ -1,0 +1,36 @@
+.container{
+    /* display: grid;
+    grid-template-columns: 1fr; */
+}
+
+.left-div{
+    border: 3px solid red;
+    height: 40vh;
+    width: 10vw;
+    /* margin-bottom:2.5em; */
+    /* text-shadow: ; */
+}
+/* https://codepen.io/justinklemm/pen/kyMjjv
+https://codepen.io/justinklemm/pen/kyMjjv
+https://codepen.io/justinklemm/pen/kyMjjv
+https://codepen.io/justinklemm/pen/kyMjjv */
+.inner-right{
+    border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 1em;
+}
+/* .right-div{
+    border: 3px solid green;
+    height: 50vh;
+} */
+
+.Shopping_cost{
+    border: 3px solid yellow;
+}
+
+
+@media screen {
+    
+}
