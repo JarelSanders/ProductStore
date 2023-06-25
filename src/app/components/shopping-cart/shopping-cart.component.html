@@ -1,19 +1,51 @@
-<p>shopping-cart works!</p>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a href="http://" target="_blank" rel="noopener noreferrer" id="logo" class="active">
+        Product
+        <span id="storeheader">
+          Store
+        </span>
+      </a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active navcollaps link-selection"  href="#">Home <span class="sr-only">(current)</span></a>
+          <!-- created data count  -->
+          <a class="nav-item nav-link navcollaps link-selection" data-counter="5" id="count"  routerLink="/shoppingcart">Shopping Cart</a>
+          <a class="nav-item nav-link navcollaps link-selection" routerLink="/sales">Sales</a>
+          <a class="nav-item nav-link navcollaps link-selection" routerLink="/products">Products</a>
+          <a class="nav-item nav-link navcollaps link-selection"  routerLink="/login/" >Login</a>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
+
 <div class="container">
     <div class="left-div">
         <div class="inner-left">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus iure officia perspiciatis ipsam libero necessitatibus architecto quaerat possimus natus incidunt aut ullam pariatur ab, vel amet ad eum illum deserunt.</p>
+            <div class="cart_item">
+                <p class="item_desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nostrum voluptate nihil blanditiis facilis eius totam natus tenetur qui ipsam quod sunt itaque, non consectetur inventore, cumque temporibus dolores neque.
+                </p>
+                <img src="../../../assets/games/new/Dragon Ball Z Kakarot" alt="" class="img_desc"/>
+                <p class="item">
+                    <span class="itm_amount">${{ item_amount }}</span>
+                    <span class="x"> X</span>
+                    <input class="quantity" type="number" name="" id="" min="1" placeholder="2"/>
+                    <input type="button" value="Remove" class="remove" (click)="remove()"/> ${{subtotal_before}}
+                </p>
+            </div>
         </div>
-        <div class="inner-right">
-            <p class="Shopping_cost">Subtotal $<span class="cost_calculation">{{subtotal}}</span></p>
-            <p class="Shopping_cost">Tax (7%) $<span class="cost_calculation">{{tax}}</span></p>
-            <p class="Shopping_cost">Shipping $<span class="cost_calculation">{{shipping}}</span></p>
+        <div class="totals">
+            <p class="Shopping_cost">Subtotal <span class="cost_calculation">${{subtotal}}</span></p>
+            <p class="Shopping_cost">Tax (7%) <span class="cost_calculation">${{tax}}</span></p>
+            <p class="Shopping_cost">Shipping <span class="cost_calculation">${{shipping}}</span></p>
+            <p class="Shopping_cost">Grand Total<span class="cost_calculation">${{grand_total}}</span></p>
             <input type="button" value="Checkout" class="submit">
         </div>
     </div>
-    <!-- <div class="right-div">
-        <div class="break"></div>
-    </div> -->
 </div>
-<!-- <div class="left-div"></div>
-<div class="right-div"></div> -->

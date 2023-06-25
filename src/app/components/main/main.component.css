@@ -5,6 +5,24 @@ header{
     margin-bottom: 5px;
 
 }
+.navbar{
+  position: relative;
+      background-color: var(--header);
+
+}
+
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+}
+
+.keep-top{
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; */
+
+}
 
 
 .navcollaps{
@@ -148,7 +166,12 @@ header a{
 } */
 
 
-
+#count::before{
+  /* https://youtube.com/shorts/XU2MxPWbvGM?feature=share */
+  content: attr(data-counter);
+  /* position: absolute;
+  top: -0.75; */
+}
 
 
 
@@ -433,4 +456,11 @@ h6{
   margin-left: 25%;
   padding-bottom: 50px;
   text-align: center;
+}
+
+@media all and (max-width: 768px) {
+  body{
+    background-color: red !important;
+    color: red !important;
+  }
 }
