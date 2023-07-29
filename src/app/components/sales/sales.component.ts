@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./sales.component.css']
 })
 export class SalesComponent {
+  xbox(){
+  alert('Jarel')
+}
 
 }

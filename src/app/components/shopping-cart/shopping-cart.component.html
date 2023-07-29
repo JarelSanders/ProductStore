@@ -15,7 +15,7 @@
           <!-- created data count  -->
           <a class="nav-item nav-link navcollaps link-selection" data-counter="5" id="count"  routerLink="/shoppingcart">Shopping Cart</a>
           <a class="nav-item nav-link navcollaps link-selection" routerLink="/sales">Sales</a>
-          <a class="nav-item nav-link navcollaps link-selection" routerLink="/products">Products</a>
+          <!-- <a class="nav-item nav-link navcollaps link-selection" routerLink="/products">Products</a> -->
           <a class="nav-item nav-link navcollaps link-selection"  routerLink="/login/" >Login</a>
         </div>
       </div>
@@ -29,17 +29,20 @@
         <div class="inner-left">
             <div class="cart_item">
                 <p class="item_desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nostrum voluptate nihil blanditiis facilis eius totam natus tenetur qui ipsam quod sunt itaque, non consectetur inventore, cumque temporibus dolores neque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nostrum voluptate nihil blanditiis 
+                    facilis eius totam natus tenetur qui ipsam quod sunt itaque
                 </p>
                 <img src="../../../assets/games/new/Dragon Ball Z Kakarot" alt="" class="img_desc"/>
                 <p class="item">
                     <span class="itm_amount">${{ item_amount }}</span>
                     <span class="x"> X</span>
                     <input class="quantity" type="number" name="" id="" min="1" placeholder="2"/>
-                    <input type="button" value="Remove" class="remove" (click)="remove()"/> ${{subtotal_before}}
+                    <input type="button" value="Remove" class="remove" (click)="remove()"/> 
+                   <span class="totalmultipler">${{subtotal_before}}</span> 
                 </p>
             </div>
         </div>
+        
         <div class="totals">
             <p class="Shopping_cost">Subtotal <span class="cost_calculation">${{subtotal}}</span></p>
             <p class="Shopping_cost">Tax (7%) <span class="cost_calculation">${{tax}}</span></p>
@@ -49,3 +52,10 @@
         </div>
     </div>
 </div>
+
+<footer>
+
+
+  <h6>Created by Jarel Sanders. &copy; 2023</h6>
+    
+</footer>

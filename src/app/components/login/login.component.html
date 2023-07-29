@@ -15,7 +15,7 @@
         <a class="nav-item nav-link active navcollaps link-selection"  href="#">Home <span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link navcollaps link-selection" routerLink="/shoppingcart">Shopping Cart</a>
         <a class="nav-item nav-link navcollaps link-selection" routerLink="/sales">Sales</a>
-        <a class="nav-item nav-link navcollaps link-selection" routerLink="/products">Products</a>
+        <!-- <a class="nav-item nav-link navcollaps link-selection" routerLink="/products">Products</a> -->
         <a class="nav-item nav-link navcollaps link-selection"  routerLink="/login/">Login</a>
       </div>
     </div>
@@ -25,27 +25,28 @@
 
 <div class="login-container">
   <h1>Login</h1>
+  <p id="input-error"></p>
   <div class=" login-contents">
     <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
       <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+          <!-- <label for="exampleInputEmail1">Email address</label> -->
           <!-- <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="loginObj.email" name="email" required="true" formControlName="email"> -->
-          <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email" required="true" formControlName="email">
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" required="true" formControlName="email">
 
           <small id="emailHelp" class="orm-text text-muted">We'll never share your email with anyone else.</small>
-          <div class="error">Email is required</div>
+          
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
+        <!-- <label for="exampleInputPassword1">Password</label> -->
         <!-- <input type="password" class="form-control" placeholder="Password" [(ngModel)]="loginObj.password" name="password" autocomplete="on" formControlName="password"> -->
-        <input type="password" class="form-control" id="password" placeholder="Password" name="password" autocomplete="on" formControlName="password" ngModel maxlength="2" minlength="8">
+        <input type="password" class="form-control" id="password" placeholder="Password" name="password" autocomplete="on" formControlName="password" ngModel maxlength="18" minlength="8">
 
       </div>
       <div class="form-check">
         <button type="submit" class="btn btn-primary" (click)="onLogin()">Login</button>
         <input type="checkbox" class="form-check-input" id="check1">
         <label class="form-check-label" for="exampleCheck1" id="rememberme">Remember me</label>
-        <button class="btn btn-primary">Login</button>
+        <!-- <button class="btn btn-primary">Login</button> -->
       </div>
       <!-- <button type="submit" class="btn btn-primary">Login</button> -->
       <div id="signup">

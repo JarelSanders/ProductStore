@@ -41,21 +41,19 @@ export class LoginComponent implements OnInit{
     
   }
   
-  onLogin(){
-    // debugger
-    const isUserExist = this.signupUsers.find(m => m.userName == this.loginObj.userName && m.password == this.loginObj.password)
+  onLogin = () => {
+    let password = (<HTMLInputElement>document.getElementById('password'));
+    let error = (<HTMLElement>     document.getElementById('input-error'));
+    let email = (<HTMLInputElement>document.getElementById('email'));
 
-    if(isUserExist != undefined){
-      alert("User Login Successfully")
+    //checks if input field contains valid email
+    if(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) || password.value == '' || email.value == ''){
+      error.innerText = 'Please enter valid credentials';
+      return false;
     }else{
-      alert("Wrong Credentials")
+      error.innerText = '';
+      return true
     }
-  }
-  // https://www.youtube.com/watch?v=38JJ0hDQoos
 
-  // sign-up/login api
-
-
-
-  
+  }   
 }

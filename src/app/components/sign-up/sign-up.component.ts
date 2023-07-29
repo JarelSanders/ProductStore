@@ -46,17 +46,21 @@ export class SignUpComponent implements OnInit {
     //www.youtube.com/watch?v=CE5Sdb45NXE
     //www.youtube.com/watch?v=CE5Sdb45NXE
     //www.youtube.com/watch?v=CE5Sdb45NXE
-
-    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+   
+       // checks if email field is correcyt email format
     $('#email').on('keyup', function () {
-      if ($('#email').val() != emailReg) {
-        // alert('no')
-
-        $('#message2')
-          .html('Enter a valid email address')
-          .css('color', 'green');
-      } else $('#message2').html('Not Matching').css('color', 'red');
+      if ($('#email').val().match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+         $('#message2')
+        .html('Correct email format')
+        .css('color', 'green');
+      } else $('#message2').html('Not correct email format').css('color', 'red');
     });
+
+    //checks if terms and services box is checked.
+    // $('#checkbox').on('checked', function(){
+    //   if($(#))
+
+    // })
 
     // checks if both password and repeat password fields match
     $('#password, #confirm_password').on('keyup', function () {
@@ -71,9 +75,13 @@ export class SignUpComponent implements OnInit {
 
   // onSignUp(){
   signUp() {
-    let pwd: string = (<HTMLInputElement>document.getElementById('')).value;
-    let pwdRepeat: string = (<HTMLInputElement>document.getElementById(''))
-      .value;
+    let pwd: string = (<HTMLInputElement>document.getElementById('password')).value;
+    let pwdRepeat: string = (<HTMLInputElement>document.getElementById('confirm_password')).value;
+    let email  = (<HTMLInputElement>document.getElementById('email'));
+    let password = (<HTMLInputElement>document.getElementById('password'));
+    let checkbox = (<HTMLInputElement>document.getElementById('checkbox'));
+    let error = (<HTMLElement>     document.getElementById('input-error'));
+    let confirmpwd = (<HTMLInputElement>document.getElementById('confirm_password'))
 
     this.signupUsers.push(this.signupObj); //stores user that trying to signup into signupUsers array (push current object into the array)
     localStorage.setItem('signupUsers', JSON.stringify(this.signupUsers)); //(store the array into local storage)
@@ -84,19 +92,53 @@ export class SignUpComponent implements OnInit {
       repeatpassword: String,
     };
 
-    // https://www.geeksforgeeks.org/how-to-validate-email-id-in-jquery/
+    
     // validates if email is an actual email
-    $('#email').on('keyup', function () {
-      if ($('#email').val() == '') {
-        // $('#email').prop('required',true);
-        // $("[name='email']").alert("required", true)
-        alert('test');
-      }
-    });
-    if ($('#email').val() == null) {
-      // $('#email').prop('required',true);
-      // $("[name='email']").alert("required", true)
-      alert('test');
+    // $('#email').on('keyup', function () {
+    //   if ($('#email').val() == '') {
+    //     alert('test');
+    //   }
+    // });
+    // if ($('#email').val() == null) {
+    //   alert('test');
+    // }
+
+    //checks if input field contains valid email
+    // if(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) || password.value == '' || confirmpwd.value == '' || checkbox.value == ''){
+    //   error.innerText = 'Please enter valid credentials';
+    //   password.style.border = '5px solid red';
+    //   checkbox.style.border = '15px solid red';
+    //   email.style.border = '5px solid red';
+    //   confirmpwd.style.border = '5px solid red';
+
+    //   return false;
+    // }else{
+    //   error.innerText = '';
+    //   password.style.border = '';
+    //   checkbox.style.border = '15px solid red';
+    //   email.style.border = '5px solid red';
+    //   confirmpwd.style.border = '5px solid red';
+    //   return true;
+    // }
+    if(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) || password.value == '' || confirmpwd.value == '' || checkbox.value == ''){
+      error.innerText = 'Please enter valid credentials';
+      email.style.border = '5px solid red';
+      password.style.border = '5px solid red';
+      checkbox.style.border = '15px solid red';
+      email.style.border = '5px solid red';
+      confirmpwd.style.border = '5px solid red';
+      return false
+    }else if (password.value != null){
+      // error.innerText = 'Please enter valid credentials';
+      password.style.border = '';
+      return false
+    }
+    
+    else{
+      // error.innerText = '';
+      // email.style.border = '';
+      // password.style.border = '';
+      return true;
     }
   }
 }

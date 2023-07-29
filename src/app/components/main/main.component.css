@@ -88,6 +88,7 @@ header a{
     text-align: center;
     justify-content: center;
     animation: change 20s 5 ease-in-out;
+    margin-bottom: -50px;
 }
 
 .content{
@@ -320,10 +321,32 @@ a span{
   /* border: 5px solid red; */
 }
 
+
+.sale-banner{
+  /* border: 5px solid red;
+  width: 15%;
+  color: red; */
+  /* position: absolute; */
+  z-index: 1;
+  left: -100%;
+  border: 5px solid red;
+  color: red;
+}
+
+/* .sale-banner::before{
+  border: 5px solid red;
+  width: 15%;
+  color: red;
+} */
 .card:hover {
   transform: translateY(20px);
 }
 
+.sale-banner:hover::before{
+  border: 5px solid red;
+  width: 15%;
+  color: red;
+}
 .card:hover:before {
   opacity: 1;
 }

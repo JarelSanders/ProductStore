@@ -15,7 +15,7 @@
           <a class="nav-item nav-link active navcollaps link-selection"  href="#">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link navcollaps link-selection" routerLink="/shoppingcart">Shopping Cart</a>
           <a class="nav-item nav-link navcollaps link-selection" routerLink="/sales">Sales</a>
-          <a class="nav-item nav-link navcollaps link-selection" routerLink="/products">Products</a>
+          <!-- <a class="nav-item nav-link navcollaps link-selection" routerLink="/products">Products</a> -->
           <a class="nav-item nav-link navcollaps link-selection"  routerLink="/login/">Login</a>
         </div>
       </div>
@@ -24,6 +24,7 @@
 </header>
 <div class="login-container">
   <h1>Sign up</h1>
+  <p id="input-error"></p>
   <div class=" login-contents">
     <form [formGroup]="signupForm" (ngSubmit)="signUp()">
       <div class="form-group">
@@ -44,9 +45,9 @@
         <div id="message"></div>
         </div>
       <div class="form-check d-flex justify-content-center mb-2" id="terms">
-        <input class="form-check-input me-2" type="checkbox" value="" id="check2" required/>
+        <input class="form-check-input me-2" type="checkbox" value="" id="checkbox" required/>
         <label class="form-check-label" for="form2Example3">
-          I agree all statements in <a href="http://" target="_blank" rel="noopener noreferrer">Terms of service</a>
+          I agree all statements in <a href="http://" target="_blank" rel="noopener noreferrer" required>Terms of service</a>
         </label>
       </div>
       <div class="form-check">
