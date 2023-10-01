@@ -423,3 +423,59 @@ a span{
 }
 
 
+@media all and (width > 992px) {
+  #logo:hover{
+    background-color: inherit;
+  }
+  #navbarNavAltMarkup{
+    /* border: 5px solid red; */
+    justify-content: center;
+    /* padding-left: 510px; */
+  }
+
+  .nav-link{
+    margin-left: 50px;
+  }
+  .sale-container{
+    /* background-color: red; */
+    margin-top: 100px;
+    margin-left: 25%;
+    width: 55%;
+    border-radius: 30px;
+    border: 5px solid var(--fontcolor);
+
+  }
+
+
+
+  .wrapper {
+    gap: 2%;
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+    /* grid-auto-flow: column; */
+    grid-auto-columns: 43%;
+    /* overscroll-behavior-inline: contain; */
+    /* justify-content: space-around; */
+    scroll-snap-type: x mandatory;
+  
+  }
+
+  .card{
+    scroll-snap-align: start;
+  }
+
+
+
+
+
+  .sections{
+    border-radius: 30px;
+    border-top: 5px solid var(--fontcolor);
+  }
+
+  .category{
+    margin-left: 60px;
+    border-bottom: 5px solid red;
+    /* margin-bottom: 50px; */
+  }
+}

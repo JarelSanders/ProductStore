@@ -63,8 +63,9 @@ header a{
 
 
 
-.login-container{
+.signup-container{
     background-color: var(--header) ;
+    padding-right: 45px;
     margin-top: 130px;
     /* height: 64vh; */
     border-radius: 50px;
@@ -72,7 +73,11 @@ header a{
     overflow: hidden;
 }
 
-.login-contents{
+small{
+    font-size: 0.55em;
+}
+
+.signup-contents{
     /* border: 5px solid green; */
     padding-top: 20%;
     padding-bottom: 25%;
@@ -83,6 +88,10 @@ h1{
 
     text-align: center;
     padding-top: 50px;
+}
+
+#input-error{
+    margin-bottom: -50px;
 }
 
 input{
@@ -117,16 +126,16 @@ label{
     /* width: 50vw; */
 }
 
-#signup{
+/* #signup{
     display: flex;
     position: absolute;
     bottom: 125px;
-    /* right: 1px; */
+
     margin-right: 50px;
     left: 152px;
     font-size: 1.2em;
-    /* border: 5px solid blue; */
-}
+    border: 5px solid blue;
+} */
 
 /* #checkmeout{
     margin-left: 15px;
@@ -141,10 +150,10 @@ label{
 }
 
 
-#forgot-password{
+/* #forgot-password{
 
     margin-left: 25px;
-}
+} */
 
 #terms{
     /* border: 5px solid green; */
@@ -161,3 +170,51 @@ label{
     /* outline: 1px solid red; */
     background-color: red;
 }
+
+
+
+@media all and (width > 1800px) {
+    #logo:hover{
+      background-color: inherit;
+    }
+    #navbarNavAltMarkup{
+      /* border: 5px solid red; */
+      justify-content: center;
+      /* padding-left: 510px; */
+    }
+  
+    .nav-link{
+      margin-left: 50px;
+    }
+
+    .signup-container{
+      /* background-color: red; */
+      margin-top: 100px;
+      width: 55%;
+      border-radius: 30px;
+      border: 5px solid var(--fontcolor);
+      margin-left: 25%;
+      margin-bottom: -600px;
+    }
+
+    .signup-contents{
+        margin-bottom: -200px;
+    }
+  
+    #input-error{
+        margin-left: 41%;
+        margin-top: 10px;
+        margin-bottom: -200px;
+        font-size: 1.2em;
+        border: 5px solid red;
+        color: red;
+        width: 270px;
+    }
+
+    /* #signup{
+        margin-left: 310px;
+        margin-bottom: -120px;
+        padding-bottom: -100px;
+    } */
+    
+  }

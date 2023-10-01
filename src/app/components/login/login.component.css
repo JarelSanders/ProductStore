@@ -151,6 +151,10 @@ label{
     margin-top: 5px;
 }
 
+small{
+    font-size: 0.59em;
+}
+
 
 .form-group{
     /* border: 6px solid blue; */
@@ -168,3 +172,43 @@ label{
 
     margin-left: 25px;
 }
+
+@media all and (width > 992px) {
+    #logo:hover{
+      background-color: inherit;
+    }
+    #navbarNavAltMarkup{
+      /* border: 5px solid red; */
+      justify-content: center;
+      /* padding-left: 510px; */
+    }
+  
+    .nav-link{
+      margin-left: 50px;
+    }
+    .login-container{
+      /* background-color: red; */
+      margin-top: 100px;
+      width: 55%;
+      border-radius: 30px;
+      border: 5px solid var(--fontcolor);
+      margin-left: 25%;
+  
+    }
+  
+    #input-error{
+        margin-left: 41%;
+        margin-top: 90px;
+        margin-bottom: -200px;
+        font-size: 1.2em;
+        /* border: 5px solid red; */
+        width: 270px;
+    }
+
+    #signup{
+        margin-left: 310px;
+        margin-bottom: -120px;
+        padding-bottom: -100px;
+    }
+
+  }

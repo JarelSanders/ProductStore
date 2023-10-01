@@ -120,24 +120,30 @@ export class SignUpComponent implements OnInit {
     //   confirmpwd.style.border = '5px solid red';
     //   return true;
     // }
-    if(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) || password.value == '' || confirmpwd.value == '' || checkbox.value == ''){
-      error.innerText = 'Please enter valid credentials';
-      email.style.border = '5px solid red';
-      password.style.border = '5px solid red';
-      checkbox.style.border = '15px solid red';
-      email.style.border = '5px solid red';
-      confirmpwd.style.border = '5px solid red';
-      return false
-    }else if (password.value != null){
-      // error.innerText = 'Please enter valid credentials';
-      password.style.border = '';
+    if (
+      $(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) ||
+      $(password.value == '') ||
+      $(confirmpwd.value == '') ||
+      $(checkbox.value == '')
+      ){
+    // if(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) || password.value == '' || confirmpwd.value == '' || checkbox.value == ''){
+    $(error).html('Please enter valid credentials').css({'color': 'red','margin-left': '394px' }); 
+    // $(email.value = ''); 
       return false
     }
+    // else {
+      //(password.value != null){
+      // error.innerText = 'Please enter valid credentials';
+    //   password.style.border = '';
+    //   return false
+    // }
     
     else{
-      // error.innerText = '';
-      // email.style.border = '';
-      // password.style.border = '';
+      $(email.value = '');
+      $(error.innerText != error.innerText);
+      $(password.value = '');
+      email.style.border = '';
+      password.style.border = '';
       return true;
     }
   }
@@ -145,3 +151,8 @@ export class SignUpComponent implements OnInit {
 // https://www.youtube.com/watch?v=38JJ0hDQoos
 
 // https://www.youtube.com/watch?v=NUHHbzau_9M&list=PL9_OU-1M9E_sjaUPfH3FIp8GtJrhJhTb8&index=2
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// https://www.youtube.com/watch?v=V8dYGNfHjfk
+
