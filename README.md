@@ -1,5 +1,9 @@
+[Project Name]
+This project is currently ongoing and actively developed by me. Stay tuned for updates and improvements!
+
+
 # ProductStore
-This is my first full stack basic product store site that utilizes custom API's.
+This is my first extensive basic product store site that utilizes custom API's using Postman.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
