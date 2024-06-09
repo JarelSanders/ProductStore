@@ -54,7 +54,6 @@ header a{
     /* text-transform: ; */
     font-size: 1.3rem;
 }
-/* https://www.youtube.com/watch?v=OFKBep95lb4 */
 
 
 
@@ -90,19 +89,41 @@ header a{
     animation: change 20s 5 ease-in-out;
     margin-bottom: -50px;
 }
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 
-.content{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
+#imgContainer{
+  margin-top: 50px;
+  border: 5px solid red;
+  height: 70vh;
+  width: 70vw;
+  margin-left: 15%;
+  position: relative;
+  
+}
+
+#topDivWallpaper{
+  height: 70vh;
+  width: 70vw;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+
+#shppingIcom{
+  height: 70vh;
+  width: 70vw;
+  /* margin-left: 15%; */
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  object-fit: cover;
+  display: block;
+
 
 }
-.content a{
-    /* background: #85c1ee;
-    padding: 10px 24px; */
-}
+
+
 
 .items a{
     /* padding: 60px 20px;
@@ -168,7 +189,6 @@ header a{
 
 
 #count::before{
-  /* https://youtube.com/shorts/XU2MxPWbvGM?feature=share */
   content: attr(data-counter);
   /* position: absolute;
   top: -0.75; */
@@ -258,7 +278,6 @@ a span{
   color: var(--fontcolor);
 }
 
-/* https://www.youtube.com/watch?v=3yfswsnD2sw */
 
 .snap-inline{
   scroll-snap-type: inline mandatory;
@@ -494,6 +513,8 @@ h6{
   .nav-link{
     margin-left: 50px;
   }
+
+  
   .container{
     /* background-color: red; */
     margin-top: 100px;
