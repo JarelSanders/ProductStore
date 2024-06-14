@@ -33,7 +33,7 @@ header{
     justify-content: center;
 }
 .link-selection:hover{
-    background: blue;
+    background: var(--headerSpan)
 }
 header a{
     text-decoration: none;
@@ -50,7 +50,7 @@ header a{
 }
 
 #storeheader{
-    color: blue;
+    color: var(--headerSpan);
     /* text-transform: ; */
     font-size: 1.3rem;
 }
@@ -93,7 +93,7 @@ header a{
 
 #imgContainer{
   margin-top: 50px;
-  border: 5px solid red;
+  /* border: 5px solid red; */
   height: 70vh;
   width: 70vw;
   margin-left: 15%;
@@ -104,11 +104,11 @@ header a{
 #topDivWallpaper{
   height: 70vh;
   width: 70vw;
-  background-color: black;
+  /* background-color: black; */
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 
@@ -197,6 +197,7 @@ header a{
 
 
 
+
 .sections{
 
     margin: 20px 0;
@@ -275,7 +276,7 @@ li  > a{
 }
 
 a span{
-  color: var(--fontcolor);
+  /* color: var(--fontcolor); */
 }
 
 
@@ -348,8 +349,9 @@ a span{
   /* position: absolute; */
   z-index: 1;
   left: -100%;
-  border: 5px solid red;
-  color: red;
+  border: 2px solid black;
+  background-color: red;
+  color: black;
 }
 
 /* .sale-banner::before{
@@ -495,9 +497,16 @@ h6{
 .social{
   width: 50%;
   height: 100%;
+  margin-top: 25px;
   margin-left: 25%;
   padding-bottom: 50px;
   text-align: center;
+  /* border: 5px solid red; */
+}
+
+.social img{
+  height: 100px;
+  width: 106px
 }
 
 @media all and (width > 992px) {
@@ -520,7 +529,7 @@ h6{
     margin-top: 100px;
     width: 55%;
     border-radius: 30px;
-    border: 5px solid var(--fontcolor);
+    /* border: 5px solid var(--fontcolor); */
 
   }
 
@@ -548,12 +557,12 @@ h6{
 
   .sections{
     border-radius: 30px;
-    border-top: 5px solid var(--fontcolor);
+    border-top: 5px solid var(--bordercolor);
   }
 
   .category{
     margin-left: 60px;
-    border-bottom: 5px solid red;
+    /* border-bottom: 5px solid red; */
     /* margin-bottom: 50px; */
   }
 }

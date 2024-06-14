@@ -3,8 +3,8 @@ header{
     background-color: var(--header);
     margin-top: -10px;
     margin-bottom: 5px;
-
 }
+
 .navbar{
   position: relative;
       background-color: var(--header);
@@ -255,7 +255,7 @@ li  > a{
 }
 
 a span{
-  color: var(--fontcolor);
+  /* color: var(--fontcolor); */
 }
 
 /* https://www.youtube.com/watch?v=3yfswsnD2sw */
@@ -499,7 +499,7 @@ h6{
     margin-top: 100px;
     width: 55%;
     border-radius: 30px;
-    border: 5px solid var(--fontcolor);
+    /* border: 5px solid var(--fontcolor); */
 
   }
 
@@ -527,7 +527,7 @@ h6{
 
   .sections{
     border-radius: 30px;
-    border-top: 5px solid var(--fontcolor);
+    border-top: 5px solid var(--bordercolor);
   }
 
   .category{

@@ -9,6 +9,9 @@
   --graybackground: #1e1e1e;
   /* --graybackground: #4C2A85; */
   --fontcolor: #bcedf6;
+  --headerSpan: #2474e4e1;
+  --bordercolor: #22395f89;
+  /* --fontcolor: #0403ff; */
 }
 
 /* fonts */
@@ -22,7 +25,9 @@
 /* base styles */
 
 body {
-  background-color: var(--graybackground);
+  /* background-color: var(--graybackground); */
+  /* background-color: #636161; */
+  background-color: #e3e9f0;
   overflow-x: hidden;
   font-family: "Roboto Condensed", sans-serif;
   margin: 0;

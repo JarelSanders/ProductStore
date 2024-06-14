@@ -32,9 +32,11 @@ header{
     display: flex;
     justify-content: center;
 }
+
 .link-selection:hover{
-    background: blue;
+    background: var(--headerSpan);
 }
+
 header a{
     text-decoration: none;
     /* color: black */
@@ -50,7 +52,7 @@ header a{
 }
 
 #storeheader{
-    color: blue;
+    color: var(--headerSpan);
     /* text-transform: ; */
     font-size: 1.3rem;
 }
@@ -89,10 +91,12 @@ header a{
     justify-content: center;
     animation: change 20s 5 ease-in-out;
 }
+
 p{
   color: blue;
   font-size: 3em;
 }
+
 .sale-banner-center{
   margin-top: 10%;
   /* border: 5px solid red; */
@@ -263,7 +267,7 @@ li  > a{
 }
 
 a span{
-  color: var(--fontcolor);
+  /* color: var(--fontcolor); */
 }
 
 /* https://www.youtube.com/watch?v=3yfswsnD2sw */
@@ -422,6 +426,9 @@ a span{
   text-transform: uppercase;
 }
 
+span{
+  color: black ;
+}
 
 @media all and (width > 992px) {
   #logo:hover{
@@ -431,6 +438,7 @@ a span{
     /* border: 5px solid red; */
     justify-content: center;
     /* padding-left: 510px; */
+    /* margin-left: -13px !important; */
   }
 
   .nav-link{
@@ -442,7 +450,7 @@ a span{
     margin-left: 25%;
     width: 55%;
     border-radius: 30px;
-    border: 5px solid var(--fontcolor);
+    /* border: 5px solid var(--fontcolor); */
 
   }
 
@@ -470,12 +478,12 @@ a span{
 
   .sections{
     border-radius: 30px;
-    border-top: 5px solid var(--fontcolor);
+    border-top: 5px solid var(--bordercolor);
   }
 
   .category{
     margin-left: 60px;
-    border-bottom: 5px solid red;
+    /* border-bottom: 5px solid red; */
     /* margin-bottom: 50px; */
   }
 }
