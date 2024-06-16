@@ -473,7 +473,7 @@ a span{
 footer{
   background: var(--header);
   align-content: center;
-  height: 45vh;
+  /* height: 45vh; */
 }
 
 h6{

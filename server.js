@@ -1,46 +1,45 @@
- const express = require('express')
-// const { default: mongoose } = require('mongoose')
- const app = express()
- const mongoose  = require('mongoose');
- mongoose.set("strictQuery", false);
+const express = require('express');
+const path = require('path');
+const mongoose = require('mongoose');
+mongoose.set("strictQuery", false);
 
+const app = express();
+const PORT = 9992;
 
+// Serve static files from the Angular app
+app.use(express.static(path.join(__dirname, 'dist/product-store')));
 
-//  app.listen(9002,function check(error)
-//  {
-//     if(error){
-//         console.log('Error....!!!!');
-//     }
-//     else{
-//         console.log('Started.....');
-//     }
-// })
-
-app.listen(9992, function check(err){
-    if(err){
-        console.log('error');
-    }
-    else{
-        console.log('started');
-    }
-
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist/product-store/index.html'));
 });
- 
-// connects to db
-mongoose.connect('mongodb://localhost:27017/userlist',
-{useNewUrlParser: true, useUnifiedTopology: true},
-function checkDb(error)
-{
-    if(error)
-    {
+
+app.get('/signup', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist/product-store/index.html'));
+});
+
+// Catch all other routes and return the index file
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist/product-store/index.html'));
+});
+
+app.listen(PORT, function check(err) {
+    if (err) {
+        console.log('error');
+    } else {
+        console.log(`started port ${PORT}`);
+    }
+});
+
+// Connect to the database
+mongoose.connect('mongodb://localhost:27017/userlist', 
+{ useNewUrlParser: true, useUnifiedTopology: true }, 
+function checkDb(error) {
+    if (error) {
         console.log('Error Connecting to DB');
-        
+    } else {
+        console.log('Successfully Connected to DB');
     }
-    else{
-        console.log('Successfully Connected to DB')
-    }
-}
-)
+});
 
 
 

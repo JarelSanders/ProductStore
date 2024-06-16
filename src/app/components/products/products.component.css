@@ -99,6 +99,18 @@ header a{
     text-transform: uppercase;
 
 }
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.banner-center p{
+  margin-top: 158px;
+    /* border: 5px solid red; */
+  /* color: black !important; */
+  text-align: center;
+}
+
+p{
+  color: blue;
+  font-size: 3em;
+}
 .content a{
     /* background: #85c1ee;
     padding: 10px 24px; */
@@ -322,16 +334,11 @@ a span{
 }
 
 
-.sale-banner{
-  /* border: 5px solid red;
-  width: 15%;
-  color: red; */
-  /* position: absolute; */
-  z-index: 1;
+/* .sale-banner{
   left: -100%;
   border: 5px solid red;
   color: red;
-}
+} */
 
 /* .sale-banner::before{
   border: 5px solid red;
@@ -342,11 +349,11 @@ a span{
   transform: translateY(20px);
 }
 
-.sale-banner:hover::before{
+/* .sale-banner:hover::before{
   border: 5px solid red;
   width: 15%;
   color: red;
-}
+} */
 .card:hover:before {
   opacity: 1;
 }
@@ -452,7 +459,8 @@ a span{
 footer{
   background: var(--header);
   align-content: center;
-  height: 45vh;
+  /* height: 45vh; */
+  /* margin-bottom: -100px; */
 }
 
 h6{
@@ -476,9 +484,17 @@ h6{
 .social{
   width: 50%;
   height: 100%;
+  margin-top: 25px;
   margin-left: 25%;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   text-align: center;
+  /* border: 5px solid red; */
+  /* padding-bottom: -200px; */
+}
+
+.social img{
+  height: 100px;
+  width: 106px
 }
 
 @media all and (width > 992px) {
@@ -532,7 +548,7 @@ h6{
 
   .category{
     margin-left: 60px;
-    border-bottom: 5px solid red;
+    /* border-bottom: 5px solid red; */
     /* margin-bottom: 50px; */
   }
 }
