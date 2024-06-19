@@ -33,20 +33,7 @@ export class SignUpComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    // Email input validation
-    // let email2 = <HTMLInputElement>document.getElementById('#email');
-    // email2.addEventListener('keyup',(e) =>{
-    //   alert('Hi')
-    // })
-    // https://www.youtube.com/watch?v=CE5Sdb45NXE
-    //www.youtube.com/watch?v=CE5Sdb45NXE
-    //www.youtube.com/watch?v=CE5Sdb45NXE
-    //www.youtube.com/watch?v=CE5Sdb45NXE
-    //www.youtube.com/watch?v=CE5Sdb45NXE
-    //www.youtube.com/watch?v=CE5Sdb45NXE
-    //www.youtube.com/watch?v=CE5Sdb45NXE
-    //www.youtube.com/watch?v=CE5Sdb45NXE
-   
+  
        // checks if email field is correcyt email format
     $('#email').on('keyup', function () {
       if ($('#email').val().match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
@@ -64,7 +51,7 @@ export class SignUpComponent implements OnInit {
 
     // checks if both password and repeat password fields match
     $('#password, #confirm_password').on('keyup', function () {
-      if ($('#password').val() == $('#confirm_password').val()) {
+      if ($('#password').val() === $('#confirm_password').val()) {
         $('#message').html('Matching').css('color', 'green');
       } else $('#message').html('Not Matching').css('color', 'red');
     });
@@ -127,7 +114,10 @@ export class SignUpComponent implements OnInit {
       $(checkbox.value == '')
       ){
     // if(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) || password.value == '' || confirmpwd.value == '' || checkbox.value == ''){
-    $(error).html('Please enter valid credentials').css({'color': 'red','margin-left': '394px' }); 
+    $(error).html('Please enter valid credentials').css({
+      'color': 'red',
+      'margin-left': '394px' 
+    }); 
     // $(email.value = ''); 
       return false
     }

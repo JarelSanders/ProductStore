@@ -1,10 +1,22 @@
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
+const { type } = require('os');
+const { stringify } = require('querystring');
 mongoose.set("strictQuery", false);
+const connect = mongoose.connect('mongodb://localhost:27017/login');
+// const collection = require("./co")
 
 const app = express();
 const PORT = 9992;
+
+// convert data into JSON format
+app.use(express.json())
+app.use(express.urlencoded({
+    extended: false
+}))
+
+
 
 // Serve static files from the Angular app
 app.use(express.static(path.join(__dirname, 'dist/product-store')));
@@ -17,6 +29,17 @@ app.get('/signup', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/product-store/index.html'));
 });
 
+app.post('/signup', async (req, res) => {
+    const data = {
+        name: req.body.email,
+        password: req.body.password,
+        repeatpassword: req.body.repeatpassword
+    }
+
+    const userdata = await collection.insertMany(data)
+    cconsole.log(userdata)
+})
+17.36
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/product-store/index.html'));
@@ -31,17 +54,42 @@ app.listen(PORT, function check(err) {
 });
 
 // Connect to the database
-mongoose.connect('mongodb://localhost:27017/userlist', 
-{ useNewUrlParser: true, useUnifiedTopology: true }, 
-function checkDb(error) {
-    if (error) {
-        console.log('Error Connecting to DB');
-    } else {
-        console.log('Successfully Connected to DB');
+// connect, 
+// { useNewUrlParser: true, useUnifiedTopology: true }, 
+// function checkDb(error) {
+//     if (error) {
+//         console.log('Error Connecting to DB');
+//     } else {
+//         console.log('Successfully Connected to DB');
+//     }
+// };
+
+
+// check db connection
+connect.then(() => {
+    console.log("Database connected Successfully")
+})
+.catch(() => {
+    console.log("Database cannot be connected")
+})
+
+
+// creating a schema
+const LoginSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
+
     }
-});
+})
 
-
+// collection part
+const collection = new mongoose.model('users', LoginSchema)
+module.exports = collection
 
 // https://www.youtube.com/watch?v=1JEQ2cnnBGQ&t=1091s
 // https://www.youtube.com/watch?v=1JEQ2cnnBGQ&t=1091s
