@@ -1,9 +1,9 @@
-var express = require('express');
+// var express = require('express');
 
-var  userController = requite('../src/app/components/users');
-const router = express.Router();
+// var  userController = requite('../src/app/components/users');
+// const router = express.Router();
 
-router.route('')
+// router.route('')
 
 
 

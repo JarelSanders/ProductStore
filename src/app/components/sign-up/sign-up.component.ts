@@ -9,7 +9,7 @@ declare var $: any;
   styleUrls: ['./sign-up.component.css'],
 })
 export class SignUpComponent implements OnInit {
-  signupUsers: any[] = [];
+  // signupUsers: any[] = [];
   signupObj: any = {
     email: '',
     password: '',
@@ -43,12 +43,6 @@ export class SignUpComponent implements OnInit {
       } else $('#message2').html('Not correct email format').css('color', 'red');
     });
 
-    //checks if terms and services box is checked.
-    // $('#checkbox').on('checked', function(){
-    //   if($(#))
-
-    // })
-
     // checks if both password and repeat password fields match
     $('#password, #confirm_password').on('keyup', function () {
       if ($('#password').val() === $('#confirm_password').val()) {
@@ -67,67 +61,31 @@ export class SignUpComponent implements OnInit {
     let email  = (<HTMLInputElement>document.getElementById('email'));
     let password = (<HTMLInputElement>document.getElementById('password'));
     let checkbox = (<HTMLInputElement>document.getElementById('checkbox'));
-    let error = (<HTMLElement>     document.getElementById('input-error'));
+    let error = (<HTMLElement>document.getElementById('input-error'));
     let confirmpwd = (<HTMLInputElement>document.getElementById('confirm_password'))
 
-    this.signupUsers.push(this.signupObj); //stores user that trying to signup into signupUsers array (push current object into the array)
-    localStorage.setItem('signupUsers', JSON.stringify(this.signupUsers)); //(store the array into local storage)
-    //reinitilize signupObj
-    this.signupObj = {
-      email: String,
-      password: String,
-      repeatpassword: String,
-    };
+    // this.signupUsers.push(this.signupObj); //stores user that trying to signup into signupUsers array (push current object into the array)
+    // localStorage.setItem('signupUsers', JSON.stringify(this.signupUsers)); //(store the array into local storage)
+    // //reinitilize signupObj
+    // this.signupObj = {
+    //   email: String,
+    //   password: String,
+    //   repeatpassword: String,
+    // };
 
-    
-    // validates if email is an actual email
-    // $('#email').on('keyup', function () {
-    //   if ($('#email').val() == '') {
-    //     alert('test');
-    //   }
-    // });
-    // if ($('#email').val() == null) {
-    //   alert('test');
-    // }
-
-    //checks if input field contains valid email
-    // if(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) || password.value == '' || confirmpwd.value == '' || checkbox.value == ''){
-    //   error.innerText = 'Please enter valid credentials';
-    //   password.style.border = '5px solid red';
-    //   checkbox.style.border = '15px solid red';
-    //   email.style.border = '5px solid red';
-    //   confirmpwd.style.border = '5px solid red';
-
-    //   return false;
-    // }else{
-    //   error.innerText = '';
-    //   password.style.border = '';
-    //   checkbox.style.border = '15px solid red';
-    //   email.style.border = '5px solid red';
-    //   confirmpwd.style.border = '5px solid red';
-    //   return true;
-    // }
     if (
       $(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) ||
       $(password.value == '') ||
       $(confirmpwd.value == '') ||
       $(checkbox.value == '')
       ){
-    // if(!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) || password.value == '' || confirmpwd.value == '' || checkbox.value == ''){
     $(error).html('Please enter valid credentials').css({
       'color': 'red',
       'margin-left': '394px' 
     }); 
-    // $(email.value = ''); 
       return false
     }
-    // else {
-      //(password.value != null){
-      // error.innerText = 'Please enter valid credentials';
-    //   password.style.border = '';
-    //   return false
-    // }
-    
+   
     else{
       $(email.value = '');
       $(error.innerText != error.innerText);
@@ -138,11 +96,3 @@ export class SignUpComponent implements OnInit {
     }
   }
 }
-// https://www.youtube.com/watch?v=38JJ0hDQoos
-
-// https://www.youtube.com/watch?v=NUHHbzau_9M&list=PL9_OU-1M9E_sjaUPfH3FIp8GtJrhJhTb8&index=2
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// https://www.youtube.com/watch?v=V8dYGNfHjfk
-
