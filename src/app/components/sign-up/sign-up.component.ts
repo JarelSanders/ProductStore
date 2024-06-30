@@ -6,7 +6,7 @@ declare var $: any;
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.css'],
+  styleUrls: ['./sign-up.component.css', '../../../styles.css'],
 })
 export class SignUpComponent implements OnInit {
   // signupUsers: any[] = [];
