@@ -1,10 +1,43 @@
+
+@import url('../../../styles.css');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* header */
 header{
+  
     background-color: var(--header);
     margin-top: -10px;
     margin-bottom: 5px;
-
+    border: 5px solid green;
 }
+
 .navbar{
   position: relative;
       background-color: var(--header);
@@ -28,13 +61,15 @@ header{
 .navcollaps{
     color: var(--fontcolor) !important;
 }
+
 .link-selection{
     display: flex;
     justify-content: center;
 }
 .link-selection:hover{
-    background: var(--headerSpan)
+    background: blue;
 }
+
 header a{
     text-decoration: none;
     /* color: black */
@@ -50,10 +85,11 @@ header a{
 }
 
 #storeheader{
-    color: var(--headerSpan);
+    color: blue;
     /* text-transform: ; */
     font-size: 1.3rem;
 }
+/* https://www.youtube.com/watch?v=OFKBep95lb4 */
 
 
 
@@ -89,6 +125,18 @@ header a{
     animation: change 20s 5 ease-in-out;
     margin-bottom: -50px;
 }
+
+.content{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+
+
+
 /* --------------------------------------------------------------------------------------------------------------------------------- */
 
 #imgContainer{

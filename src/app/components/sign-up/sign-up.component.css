@@ -1,8 +1,65 @@
+/* @import url('../../../styles.css'); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* header */
 header{
     background-color: var(--header);
     margin-top: -10px;
     margin-bottom: 5px;
+    border: 5px solid green
 
 }
 
@@ -19,7 +76,6 @@ header{
 }
 header a{
     text-decoration: none;
-    /* color: black */
     color: var(--fontcolor);
 }
 
@@ -28,22 +84,13 @@ header a{
     font-size: 1.3em;
     padding-left: 8px;
     padding-bottom: 3px;
-    /* margin-right: -500px !important; */
     text-transform: uppercase;
-    /* border: 5px solid green ; */
     padding-top: 10px;
 }
 
 #storeheader{
     color: blue;
-    /* text-transform: ; */
     font-size: 1.3rem;
-}
-/* https://www.youtube.com/watch?v=OFKBep95lb4 */
-
-.a{
-    /* border: 5px solid green; */
-    /* padding-top: 100px; */
 }
 
 
@@ -69,8 +116,9 @@ header a{
     margin-top: 130px;
     /* height: 64vh; */
     border-radius: 50px;
-    border: 5px solid var(--fontcolor);
+    /* border: 5px solid var(--fontcolor); */
     overflow: hidden;
+    border: 5px solid red;
 }
 
 small{
@@ -99,14 +147,13 @@ input{
     /* color: blue !important; */
     margin-top: 0;
     padding-top: 0;
-    /* margin-left: 22%; */
-    /* border-bottom: 3px solid red; */
+
     border-top: none;
     border-left: none;
     border-right: none;
     width: 80%;
     /* align-items: center; */
-    background-color: var(--header);
+    background-color: var(--header) ;
 }
 
 input:focus{
@@ -173,14 +220,12 @@ label{
 
 
 
-@media all and (width > 1800px) {
+@media all and (width > 768px) {
     #logo:hover{
       background-color: inherit;
     }
     #navbarNavAltMarkup{
-      /* border: 5px solid red; */
       justify-content: center;
-      /* padding-left: 510px; */
     }
   
     .nav-link{
@@ -188,13 +233,14 @@ label{
     }
 
     .signup-container{
-      /* background-color: red; */
       margin-top: 100px;
       width: 55%;
       border-radius: 30px;
       border: 5px solid var(--fontcolor);
       margin-left: 25%;
       margin-bottom: -600px;
+      /* background-color: var(--header) ; */
+      /* border: 5px solid green; */
     }
 
     .signup-contents{
@@ -211,10 +257,29 @@ label{
         width: 270px;
     }
 
-    /* #signup{
-        margin-left: 310px;
-        margin-bottom: -120px;
-        padding-bottom: -100px;
-    } */
-    
-  }
+    input{
+        border-radius: 5px;
+        /* color: blue !important; */
+        margin-top: 0;
+        padding-top: 0;
+        /* margin-left: 22%; */
+        /* border-bottom: 3px solid red; */
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 80%;
+        /* align-items: center; */
+        background-color: var(--header) ;
+    }
+
+    input:focus{
+        background-color: var(--graybackground);
+    }
+
+    label{
+        margin: 0;
+    }
+
+
+
+}

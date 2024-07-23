@@ -5,7 +5,7 @@ import { FormControl, FormGroup, Validator } from '@angular/forms';
 @Component({
   selector: 'app-forgot-password',
   templateUrl: './forgot-password.component.html',
-  styleUrls: ['./forgot-password.component.css']
+  styleUrls: ['./forgot-password.component.css', '../../../styles.css']
 })
 export class ForgotPasswordComponent {
   userForm = new FormGroup({

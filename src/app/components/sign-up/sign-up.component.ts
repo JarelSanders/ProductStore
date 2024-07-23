@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+// import { HttpClient } from '@angular/common/http';
+// import { HttpClient } from '@angular/common/http';
+import { DataService } from 'src/app/data.service';
 
+
+// using jquery
 declare var $: any;
 
 @Component({
@@ -9,6 +14,7 @@ declare var $: any;
   styleUrls: ['./sign-up.component.css', '../../../styles.css'],
 })
 export class SignUpComponent implements OnInit {
+  data: any;
   // signupUsers: any[] = [];
   signupObj: any = {
     email: '',
@@ -30,9 +36,15 @@ export class SignUpComponent implements OnInit {
     ]),
   });
 
-  constructor() {}
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+
+    // this.dataService.getData().subscribe((
+    //   data: any
+    // ) => {
+    //   this.data = data;
+    // })
   
        // checks if email field is correcyt email format
     $('#email').on('keyup', function () {
@@ -54,8 +66,15 @@ export class SignUpComponent implements OnInit {
     $('input').css('color', 'blue');
   }
 
-  // onSignUp(){
+  //method onSignUp(){
   signUp() {
+
+        this.dataService.getData().subscribe((
+      data: any
+    ) => {
+      this.data = data;
+    })
+
     let pwd: string = (<HTMLInputElement>document.getElementById('password')).value;
     let pwdRepeat: string = (<HTMLInputElement>document.getElementById('confirm_password')).value;
     let email  = (<HTMLInputElement>document.getElementById('email'));

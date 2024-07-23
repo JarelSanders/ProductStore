@@ -1,6 +1,10 @@
+
+
+/* @import url('../src/app/components/sign-up/sign-up.component.css'); */
+
 /* You can add global styles to this file, and also import other style files */
 
-@import url('/src/app/components/sign-up/sign-up.component.css');
+/* @import url('/src/app/components/sign-up/sign-up.component.css'); */
 
 /* variables */
 :root {
