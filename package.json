@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build": "ng build --prod",
+    "build": "ng build --configuration production",
     "start": "http-server ./dist/product-store",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+  },
+  "engines": {
+  "node": "20.x",
+  "npm": "10.x"
   },
   "private": true,
   "dependencies": {
