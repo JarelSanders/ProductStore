@@ -12,4 +12,7 @@ export class DataService {
   getData(){
     return this.http.get(this.apiUrl)
   }
+
+  
 }
+

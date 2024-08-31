@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class SalesComponent {
   xbox(){
-  alert('Jarel')
+  alert('test')
 }
 
 }

@@ -32,6 +32,13 @@ app.use(express.static(path.join(__dirname, 'dist/product-store')));
 
 // app.use('/typeScript', express.static(__dirname, + '/sign-up'))
 
+app.get("/data", (req, res) => {
+  // Send some data back to the frontend
+      console.log("Sending data...");
+
+  res.json({ message: "Data response" });
+});
+
 
 // Serve the homepage
 app.get('/', (req, res) => {

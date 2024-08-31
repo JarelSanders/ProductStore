@@ -29,7 +29,7 @@
   <h1>Sign up</h1>
   <p id="input-error"></p>
   <div class=" signup-contents">
-    <form action="/signup" method="post"  [formGroup]="signupForm" (ngSubmit)="signUp()"  >
+    <form action="/signup" method="post"  [formGroup]="signupForm" (ngSubmit)="signUp($event)" >
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" [ngModelOptions]="{standalone: true}" id="email" aria-describedby="emailHelp" placeholder="Enter email" required [(ngModel)]="signupObj.email" name="email">
@@ -48,7 +48,7 @@
         <div id="message"></div>
         </div>
       <div class="form-check">
-        <button type="submit" class="btn btn-primary" [routerLink]='' (click)="signUp()">Sign up</button>
+        <button type="submit" class="btn btn-primary">Sign up</button>
 
       </div>
     </form>

@@ -7,21 +7,13 @@ header{
 
 .navbar{
   position: relative;
-      background-color: var(--header);
+  background-color: var(--header);
 
 }
 
 .navbar.fixed-top {
   position: fixed;
   top: 0;
-}
-
-.keep-top{
-  /* position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0; */
-
 }
 
 
@@ -37,7 +29,6 @@ header{
 }
 header a{
     text-decoration: none;
-    /* color: black */
     color: var(--fontcolor);
 }
 
@@ -51,29 +42,13 @@ header a{
 
 #storeheader{
     color: blue;
-    /* text-transform: ; */
     font-size: 1.3rem;
 }
-/* https://www.youtube.com/watch?v=OFKBep95lb4 */
-
-
 
 .custom-toggler.navbar-toggler {
-    /* border-color: blue; */
     background-color: blue;
 }
 
-/* scroll snap */
-/* .items div{
-    padding: 60px 20px;
-    text-align: center;
-    background: #fff;
-    border-radius: 10px;
-    scroll-snap-align: start;
-    border: 5px solid green;
-    width: 100%;
-    white-space: nowrap;
-} */
 
 /* changing header image */
 .section_top{
@@ -100,45 +75,22 @@ header a{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container {
-  /* margin-top: 30%; */
   border: 5px solid red;
   background-color: var(--header) ;
-      border-radius: 50px;
-    border: 5px solid var(--fontcolor);
-    overflow: hidden;
+  border-radius: 50px;
+  border: 5px solid var(--fontcolor);
+  overflow: hidden;
 }
-
 
 .left-div {
   height: 40vh;
 }
-/* https://codepen.io/justinklemm/pen/kyMjjv
-   https://codepen.io/justinklemm/pen/kyMjjv */
 
 /* cart item customer added to cart */
 .cart_item {
   display: block;
   border: 3px solid rgba(230, 221, 221, 0.102);
-  /* margin-bottom: 5px; */
   border-radius: 5px;
 }
 
@@ -147,12 +99,10 @@ header a{
   width: 80%;
   float: left;
   margin-top: 3px;
-  /* border: 3px solid green; */
   line-height: 2em;
   padding-right: 1em;
   padding-left: 1em;
   padding: 0.2em 1em 0 1em;
-  /* font: "Roboto Condensed"; */
 }
 
 /* the image for each item_desc */
@@ -161,7 +111,6 @@ img {
   margin-top: 9px;
   height: 13vh;
   margin-left: -10px;
-  /* border: 3px solid white; */
 }
 
 
@@ -202,19 +151,14 @@ input[type=number] {
   margin-left: -50em;
 }
 .item {
-  /* margin-right: 1%; */
   margin-left: 5%;
   padding-top: 30px;
-  /* display: block !important; */
-  /* border: 3px solid white; */
   width: 80vw;
   padding-left: 23px;
-  /* font-size: .01 em !important */
 }
 
 .itm_amount {
   margin-right:5%;
-  /* margin-left: 1%; */
 }
 
 .x {
@@ -223,7 +167,6 @@ input[type=number] {
 
 /* totals subtotal, tax, shipping, grand  and checkout */
 .totals {
-  /* border: 3px solid white; */
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -246,72 +189,38 @@ input[type=number] {
   /* font: ; */
 }
 
-@media screen {
-}
-
 
 /* footer */
 footer{
   background: var(--header);
-  /* align-content: center; */
-  /* height: 4vh; */
-  /* margin-top: 80%;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  padding-top: 2%; */
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 0.9rem;
-
-
 }
-
-h6{
-  /* position: relative; */
-  /* margin-bottom: 0;
-  padding-bottom: 0; */
-  /* bottom: 21px */
-  /* padding-top: 5px; */
-}
-
-
-
-
-
 
 @media all and (width > 992px) {
   #logo:hover{
     background-color: inherit;
   }
   #navbarNavAltMarkup{
-    /* border: 5px solid red; */
     justify-content: center;
-    /* padding-left: 510px; */
   }
 
   .nav-link{
     margin-left: 50px;
   }
+
   .container{
-    /* background-color: red; */
     margin-top: 100px;
     width: 55%;
     border-radius: 30px;
-    /* border: 5px solid var(--fontcolor); */
 
   }
 
-
-
   .wrapper {
     gap: 2%;
-    /* overflow-x: auto; */
-    /* overflow-y: hidden; */
-    /* grid-auto-flow: column; */
     grid-auto-columns: 43%;
-    /* overscroll-behavior-inline: contain; */
-    /* justify-content: space-around; */
     scroll-snap-type: x mandatory;
   
   }
@@ -320,10 +229,6 @@ h6{
     scroll-snap-align: start;
   }
 
-
-
-
-
   .sections{
     border-radius: 30px;
     border-top: 5px solid var(--bordercolor);
@@ -331,7 +236,6 @@ h6{
 
   .category{
     margin-left: 60px;
-    /* border-bottom: 5px solid red; */
-    /* margin-bottom: 50px; */
+
   }
 }

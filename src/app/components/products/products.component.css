@@ -16,15 +16,6 @@ header{
   top: 0;
 }
 
-.keep-top{
-  /* position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0; */
-
-}
-
-
 .navcollaps{
     color: var(--fontcolor) !important;
 }
@@ -51,29 +42,15 @@ header a{
 
 #storeheader{
     color: blue;
-    /* text-transform: ; */
     font-size: 1.3rem;
 }
-/* https://www.youtube.com/watch?v=OFKBep95lb4 */
 
 
 
 .custom-toggler.navbar-toggler {
-    /* border-color: blue; */
     background-color: blue;
 }
 
-/* scroll snap */
-/* .items div{
-    padding: 60px 20px;
-    text-align: center;
-    background: #fff;
-    border-radius: 10px;
-    scroll-snap-align: start;
-    border: 5px solid green;
-    width: 100%;
-    white-space: nowrap;
-} */
 
 /* changing header image */
 .section_top{
@@ -99,11 +76,8 @@ header a{
     text-transform: uppercase;
 
 }
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .banner-center p{
   margin-top: 158px;
-    /* border: 5px solid red; */
-  /* color: black !important; */
   text-align: center;
 }
 
@@ -111,58 +85,6 @@ p{
   color: blue;
   font-size: 3em;
 }
-.content a{
-    /* background: #85c1ee;
-    padding: 10px 24px; */
-}
-
-.items a{
-    /* padding: 60px 20px;
-    text-align: center;
-    background: #fff;
-    border-radius: 10px;
-    scroll-snap-align: start;
-    border: 5px solid green;
-
-    padding: 0;
-    width: fit-content;     */
-}
-
-.items-feature{
-    /* width: 100%;
-    height: 100%; */
-}
-
-.items{
-    /* display: flex;
-    gap: 10px;
-    overflow-x:scroll;
-
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    height: 100%;
-    width: 100%;    */
-}
-
-.a{
-    /* width: 100%; */
-    /* position: relative;
-    animation: mymove 90s infinite;
-    animation-delay: 2s;
-    animation-timing-function: linear; */
-
-}
-
-
-
-.featured-container{
-    /* border: 5px solid red;
-    margin-top: 10px;
-    margin-bottom: 90px;
-    width: 100%;
-    overflow-y: hidden; */
-}
-
 
 .a img{
     border: 5px solid blue;
@@ -172,70 +94,19 @@ p{
     background-size: cover;    
 }
 
-/* .featured-container .feature-cards{
-    height: 390px;
-    width: 100%;
-    max-width: 100%;
-} */
 
 
 #count::before{
-  /* https://youtube.com/shorts/XU2MxPWbvGM?feature=share */
   content: attr(data-counter);
-  /* position: absolute;
-  top: -0.75; */
 }
 
 
 
 
 .sections{
-
     margin: 20px 0;
-
 }
 
-
-.section-items{
-    /* border: 8px solid red;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 43%;
-    gap: 1%;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-
-    background-color: white; */
-}
-
-.li-item{
-
-    /* margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 50px;
-    padding: 0 29px;
-    padding-left: 0; */
-
- 
-
-}
-
-/* li img{ */
-
-    /* height: 149px;
-
-    width: 176.19px;
-    border: 1.5px solid blue;
-
-    margin-inline: auto;
-    padding: 0 6px; 
-    border-radius: 3px; */
-    
-/* } */
-
-/* li a{ */
-  /* background-color: green; */
-/* } */
 
 section a{
   text-decoration: none;
@@ -251,40 +122,23 @@ a{
 }
 
 li  > a{
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px; */
   inline-size: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
 .section-items-container{
-  /* overflow-x: scroll;    */
-  /* overflow-y: hidden; */
-  /* inline-size: min(100% - 4rem, 70rem); */
   height: 250px;
 }
-
-a span{
-  /* color: var(--fontcolor); */
-}
-
-/* https://www.youtube.com/watch?v=3yfswsnD2sw */
 
 .snap-inline{
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: 1rem;
-    
 }
 
 .snap-inline > * {
   scroll-snap-align:  start;
-  /* animation-name: slide-then-hide;
-  animation-duration: 52s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards; */
+
 }
 
 @keyframes change
@@ -312,7 +166,6 @@ a span{
   grid-auto-flow: column;
   grid-auto-columns: 43%;
   overscroll-behavior-inline: contain;
-  /* justify-content: space-around; */
   scroll-snap-type: x mandatory;
   max-height: fit-content;
 }
@@ -325,35 +178,17 @@ a span{
   background: white;
   position: relative;
   display: flex;
-  /* left: 50px; */
   scroll-snap-align: start;
   align-items: flex-end;
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  /* border: 5px solid red; */
 }
 
 
-/* .sale-banner{
-  left: -100%;
-  border: 5px solid red;
-  color: red;
-} */
-
-/* .sale-banner::before{
-  border: 5px solid red;
-  width: 15%;
-  color: red;
-} */
 .card:hover {
   transform: translateY(20px);
 }
 
-/* .sale-banner:hover::before{
-  border: 5px solid red;
-  width: 15%;
-  color: red;
-} */
 .card:hover:before {
   opacity: 1;
 }
@@ -401,7 +236,6 @@ a span{
 .card .info h1 {
   margin: 0px;
   font-size: 1.1rem;
-  /* border: 3px solid red; */
   width:250px;
   margin: 0 auto;
   opacity: 100%;
@@ -431,18 +265,6 @@ a span{
   color: white;
 }
 
-
-
-/* add a slight gray/white hover color over the footer icons */
-/* add a slight gray/white hover color over the footer icons */
-/* add a slight gray/white hover color over the footer icons */
-/* add a slight gray/white hover color over the footer icons */
-/* add a slight gray/white hover color over the footer icons */
-/* add a slight gray/white hover color over the footer icons */
-/* add a slight gray/white hover color over the footer icons */
-/* add a slight gray/white hover color over the footer icons */
-/* add a slight gray/white hover color over the footer icons */
-
 li a{
   color: blue;
   font-size: 1.1rem;
@@ -459,8 +281,6 @@ a span{
 footer{
   background: var(--header);
   align-content: center;
-  /* height: 45vh; */
-  /* margin-bottom: -100px; */
 }
 
 h6{
@@ -486,10 +306,7 @@ h6{
   height: 100%;
   margin-top: 25px;
   margin-left: 25%;
-  /* padding-bottom: 50px; */
   text-align: center;
-  /* border: 5px solid red; */
-  /* padding-bottom: -200px; */
 }
 
 .social img{
@@ -502,44 +319,27 @@ h6{
     background-color: inherit;
   }
   #navbarNavAltMarkup{
-    /* border: 5px solid red; */
     justify-content: center;
-    /* padding-left: 510px; */
   }
 
   .nav-link{
     margin-left: 50px;
   }
   .container{
-    /* background-color: red; */
     margin-top: 100px;
     width: 55%;
     border-radius: 30px;
-    /* border: 5px solid var(--fontcolor); */
-
   }
-
-
 
   .wrapper {
     gap: 2%;
-    /* overflow-x: auto; */
-    /* overflow-y: hidden; */
-    /* grid-auto-flow: column; */
     grid-auto-columns: 43%;
-    /* overscroll-behavior-inline: contain; */
-    /* justify-content: space-around; */
     scroll-snap-type: x mandatory;
-  
   }
 
   .card{
     scroll-snap-align: start;
   }
-
-
-
-
 
   .sections{
     border-radius: 30px;
@@ -548,7 +348,5 @@ h6{
 
   .category{
     margin-left: 60px;
-    /* border-bottom: 5px solid red; */
-    /* margin-bottom: 50px; */
   }
 }

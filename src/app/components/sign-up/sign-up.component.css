@@ -1,68 +1,10 @@
-/* @import url('../../../styles.css'); */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* header */
 header{
     background-color: var(--header);
     margin-top: -10px;
     margin-bottom: 5px;
-    border: 5px solid green
-
 }
-
 
 .navcollaps{
     color: var(--fontcolor) !important;
@@ -93,32 +35,16 @@ header a{
     font-size: 1.3rem;
 }
 
-
-
-
-
-
 .custom-toggler.navbar-toggler {
-    /* border-color: blue; */
     background-color: blue;
 }
-
-
-
-
-
-
-
 
 .signup-container{
     background-color: var(--header) ;
     padding-right: 45px;
     margin-top: 130px;
-    /* height: 64vh; */
     border-radius: 50px;
-    /* border: 5px solid var(--fontcolor); */
     overflow: hidden;
-    border: 5px solid red;
 }
 
 small{
@@ -126,10 +52,8 @@ small{
 }
 
 .signup-contents{
-    /* border: 5px solid green; */
     padding-top: 20%;
     padding-bottom: 25%;
-    /* text-align: center; */
 }
 
 h1{
@@ -144,15 +68,12 @@ h1{
 
 input{
     border-radius: 5px;
-    /* color: blue !important; */
     margin-top: 0;
     padding-top: 0;
-
     border-top: none;
     border-left: none;
     border-right: none;
     width: 80%;
-    /* align-items: center; */
     background-color: var(--header) ;
 }
 
@@ -167,43 +88,17 @@ label{
 .button-color{background: blue;}
 
 .form-check{
-    /* border: 5px solid yellow; */
     display: flex;
     justify-content: center;
-    /* width: 50vw; */
 }
-
-/* #signup{
-    display: flex;
-    position: absolute;
-    bottom: 125px;
-
-    margin-right: 50px;
-    left: 152px;
-    font-size: 1.2em;
-    border: 5px solid blue;
-} */
-
-/* #checkmeout{
-    margin-left: 15px;
-} */
 
 
 .form-group{
-    /* border: 6px solid blue; */
-    /* justify-content: center; */
-    /* align-content: center; */
     margin-left: 21%;
 }
 
 
-/* #forgot-password{
-
-    margin-left: 25px;
-} */
-
 #terms{
-    /* border: 5px solid green; */
     height: 50px;
     width: 270px;
     margin-left: 80px;
@@ -213,8 +108,6 @@ label{
     margin-right: 260px;
     margin-top: 5px;
     width: 45px;
-    /* border: 8px solid red; */
-    /* outline: 1px solid red; */
     background-color: red;
 }
 
@@ -239,8 +132,7 @@ label{
       border: 5px solid var(--fontcolor);
       margin-left: 25%;
       margin-bottom: -600px;
-      /* background-color: var(--header) ; */
-      /* border: 5px solid green; */
+
     }
 
     .signup-contents{
@@ -252,23 +144,18 @@ label{
         margin-top: 10px;
         margin-bottom: -200px;
         font-size: 1.2em;
-        border: 5px solid red;
         color: red;
         width: 270px;
     }
 
     input{
         border-radius: 5px;
-        /* color: blue !important; */
         margin-top: 0;
         padding-top: 0;
-        /* margin-left: 22%; */
-        /* border-bottom: 3px solid red; */
         border-top: none;
         border-left: none;
         border-right: none;
         width: 80%;
-        /* align-items: center; */
         background-color: var(--header) ;
     }
 

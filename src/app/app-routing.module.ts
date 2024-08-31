@@ -32,5 +32,3 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-// https://www.youtube.com/watch?v=ibn2yAomxp8
-// app-router

@@ -1,11 +1,8 @@
-/* @import url('../../../styles.css'); */
-
 /* header */
 header{
     background-color: var(--header);
     margin-top: -10px;
     margin-bottom: 5px;
-
 }
 
 
@@ -24,7 +21,6 @@ header{
 
 header a{
     text-decoration: none;
-    /* color: black */
     color: var(--fontcolor);
 }
 
@@ -38,19 +34,16 @@ header a{
 
 #storeheader{
     color: blue;
-    /* text-transform: ; */
     font-size: 1.3rem;
 }
 
 .custom-toggler.navbar-toggler {
-    /* border-color: blue; */
     background-color: blue;
 }
 
 
 
 #input-error{
-    /* border: 5px solid red; */
     width: 250px;
     margin-left: 100px;
     margin-bottom: -80px;
@@ -58,25 +51,17 @@ header a{
     color: red;
 }
 
-
-
-
-
-
 .login-container{
     background-color: var(--header) ;
     margin-top: 130px;
-    /* height: 60vh; */
     border-radius: 50px;
     border: 5px solid var(--fontcolor);
     overflow: hidden;
 }
 
 .login-contents{
-    /* border: 5px solid green; */
     padding-top: 20%;
     padding-bottom: 25%;
-    /* text-align: center; */
 }
 
 h1{
@@ -85,25 +70,20 @@ h1{
     padding-top: 50px;
 }
 
-
-
 input{
     border-radius: 5px;
     color: blue !important;
     margin-top: 0;
     padding-top: 0;
-    /* margin-left: 22%; */
-    /* border-bottom: 3px solid red; */
     border-top: none;
     border-left: none;
     border-right: none;
     width: 80%;
-    /* align-items: center; */
     background-color: var(--header);
 }
 
 .error{
-    color: red;
+  color: red;
 }
 
 input:focus{
@@ -121,10 +101,8 @@ label{
 .button-color{background: blue;}
 
 .form-check{
-    /* border: 5px solid yellow; */
     display: flex;
     justify-content: center;
-    /* width: 50vw; */
 }
 
 #signup{
@@ -132,13 +110,7 @@ label{
     position: relative;
     bottom: -44px;
     left: 79px;
-    /* right: 1px; */
-    /* margin-right: 50px; */
     font-size: 1.2em;
-    /* margin-bottom: 115px; */
-    /* border: 5px solid blue; */
-
-
 }
 
 #rememberme{
@@ -146,9 +118,7 @@ label{
 }
 
 #check1{
-    /* border: 80px solid red; */
     width: 40px;
-    /* justify-content: center; */
     margin-left: 208px;
     margin-top: 5px;
 }
@@ -157,21 +127,12 @@ small{
     font-size: 0.59em;
 }
 
-
 .form-group{
-    /* border: 6px solid blue; */
-    /* justify-content: center; */
-    /* align-content: center; */
     margin-left: 21%;
     margin-top: 30px;
 }
 
-/* .form-check{ */
-    /* border: 5px solid green; */
-/* } */
-
 #forgot-password{
-
     margin-left: 25px;
 }
 
@@ -180,22 +141,18 @@ small{
       background-color: inherit;
     }
     #navbarNavAltMarkup{
-      /* border: 5px solid red; */
       justify-content: center;
-      /* padding-left: 510px; */
     }
   
     .nav-link{
       margin-left: 50px;
     }
     .login-container{
-      /* background-color: red; */
       margin-top: 100px;
       width: 55%;
       border-radius: 30px;
       border: 5px solid var(--fontcolor);
       margin-left: 25%;
-  
     }
   
     #input-error{
@@ -203,7 +160,6 @@ small{
         margin-top: 90px;
         margin-bottom: -200px;
         font-size: 1.2em;
-        /* border: 5px solid red; */
         width: 270px;
     }
 
@@ -213,4 +169,4 @@ small{
         padding-bottom: -100px;
     }
 
-  }
+}
