@@ -1,0 +1,242 @@
+[33mcommit 999c27363f49f7c69fe4b815dc4e0b8270cd5376[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Tue Mar 25 09:20:03 2025 -0400
+
+    Added user rgustration with email verification and password hashing
+
+[33mcommit e81416c711e09646302e94aefeb9e04639363e65[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sun Sep 15 15:13:26 2024 -0400
+
+    updated footer on home and product page
+
+[33mcommit 0b62382d3b3615f3d24924268d53edb99c9166cc[m[33m ([m[1;31mheroku/master[m[33m)[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sun Sep 1 17:51:19 2024 -0400
+
+    updating routing for navbar
+
+[33mcommit a208c5afe19edaa3007ad5f27fca11aaae863d67[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sun Sep 1 16:40:38 2024 -0400
+
+    adding routlink to main in login component
+
+[33mcommit 8f51d4434ba7aa5cae2ef81b95395d95eb567417[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sun Sep 1 16:35:43 2024 -0400
+
+    adding routlink to main in login component
+
+[33mcommit 74af7c62c7b1b64319435cefbbfc4fa7270d3248[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sun Sep 1 16:19:13 2024 -0400
+
+    adding routlink to signup in login component
+
+[33mcommit bcbccfc985987a0a7d868c5ef4caddecf481d937[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sat Aug 31 17:42:51 2024 -0400
+
+    Fix build command and specify Node/NPM versions
+
+[33mcommit 6953e21946bc396fcb20bd1ec06c73a4ca228de9[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sat Aug 31 17:39:00 2024 -0400
+
+    Update build and start scripts for Heroku
+
+[33mcommit 9a3cdbfab2405d9b214f60fb9b52d5312f10cd1e[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sat Aug 31 17:16:06 2024 -0400
+
+    removed commented lines and upddated submit button
+
+[33mcommit 0446011d0426e985982d5a51afc569eeb0d9fc7a[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Mon Jul 22 20:47:06 2024 -0400
+
+    Added data service for backend
+
+[33mcommit 483816c70566297ab492b9b10cfe6ead6ce98715[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sun Jun 30 17:33:40 2024 -0400
+
+    updating backend server to handle css for login component
+
+[33mcommit 0583a1e748464defb93bf5d09a446c4bc57588be[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sat Jun 22 19:01:46 2024 -0400
+
+    Fix security vulnerabilities in dependencies
+
+[33mcommit 36487fe7687974ad7ab8ecb29554e12db85ff7b3[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sat Jun 22 18:31:49 2024 -0400
+
+    updated package.json to fix vulnerabilities
+
+[33mcommit 8b8d41f59e036b8f3ddf3e0221b757f8c8a9191f[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sat Jun 22 18:11:26 2024 -0400
+
+    added header on signup page
+
+[33mcommit 01c379181718a44c0457324097447d259a4e5394[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sat Jun 22 17:32:21 2024 -0400
+
+    updated signup component html
+
+[33mcommit 7d3dcf0bc068afba47bafef6164e161355d3c4c0[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sat Jun 22 17:30:57 2024 -0400
+
+    updated signup component html
+
+[33mcommit af22fd314d9c60b5bec7948898e5e668a08011c8[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Wed Jun 19 18:14:14 2024 -0400
+
+    updated server.js db
+
+[33mcommit 78a8354ab37d35123ac0f5fee51d22c45e516e03[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sun Jun 16 13:53:10 2024 -0400
+
+    Updated backend server to load webpage
+
+[33mcommit 59df8772bc28d273321281a608cd30c5af746f72[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Fri Jun 14 00:19:12 2024 -0400
+
+    updated navbar on main page
+
+[33mcommit 50288978d70a73060a6c2b3febdd9ad6c17dbcbc[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sun Jun 9 16:58:55 2024 -0400
+
+    updating interface
+
+[33mcommit d711d0f414c089ee737139115237b1bd11e352d1[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sun Feb 25 19:07:03 2024 -0500
+
+    resolved polyfill issue
+
+[33mcommit 3745bf6c32adca9b74e7660d16fbda59dd4df805[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Mon Oct 9 19:20:10 2023 -0400
+
+    Update README.md
+
+[33mcommit f664fe9cd307aee80112ee09abf4e9e959132540[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Mon Oct 9 19:17:07 2023 -0400
+
+    Update README.md
+
+[33mcommit dcead999ef84584e83f7f7563829c9614f3404f2[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sun Oct 1 23:05:58 2023 -0400
+
+    Updated images to  Product Component HTML
+
+[33mcommit c72b8507f2c697e0ee1e8383b60f66fd8f7c1b41[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sun Oct 1 14:10:13 2023 -0400
+
+    Updating Product Component HTML
+
+[33mcommit 588bdaf4d9006709df77aa9be0f45247cacbac75[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sat Jul 29 13:30:36 2023 -0400
+
+    updated password reset components and login components"
+
+[33mcommit ef4f029aad27faed4c8f34f0f8860e106ef19b6b[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sun Jun 25 18:04:01 2023 -0400
+
+    made header static in main component. Now working on media scaling
+
+[33mcommit e34f3e48897f9895bd20b07200dc7b06583950dc[m
+Merge: a192a56 343bb17
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sun Jun 18 13:21:59 2023 -0400
+
+    iMerge branch 'master' of https://github.com/JarelSanders/ProductStore
+    
+    test
+
+[33mcommit a192a563eeb31dd152ad5f7fda3ea24b59ed9669[m
+Author: Jarel Sanders <jarelsanders1986@gmail.com>
+Date:   Sun Jun 18 12:56:55 2023 -0400
+
+    updated signup page
+
+[33mcommit 343bb17308ef69363c152cf12305883fb2470103[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sun Jun 18 11:45:03 2023 -0400
+
+    test
+
+[33mcommit dbed57d31c5cd9642759b63f7fc391a954be41ce[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sun Jun 11 15:29:52 2023 -0400
+
+    updated signup with jquery
+
+[33mcommit 120256749b89094344ccb80c5efdd8e5e59a9159[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sun Jun 4 20:32:50 2023 -0400
+
+    Added top navbar
+
+[33mcommit 6594875f23bd493f9e8ae53411a7968c241252be[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sun Jun 4 20:29:47 2023 -0400
+
+    empty
+
+[33mcommit 4208618e3f3361921e62eaf592fe102af0989b59[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sun Jun 4 20:17:42 2023 -0400
+
+    Added top navbar to signup form
+
+[33mcommit 76d8c17ec854017357be0f866e44acf493debf7c[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sun Jun 4 20:15:57 2023 -0400
+
+    Added top navbar
+
+[33mcommit b5773631af6cdccb3d6b3fc9f3370517c85f1139[m
+Author: JarelSanders <jarelsanders1986@gmail.com>
+Date:   Sun Jun 4 20:05:53 2023 -0400
+
+    Update README.md
+
+[33mcommit 667a3c07a2dfd3fa2af41008d2a11a17089891a4[m
+Author: JarelSanders <jarelsanders1986@gmail.com>
+Date:   Sun Jun 4 20:05:10 2023 -0400
+
+    Update README.md
+
+[33mcommit 5a18525c7450cdacf236434317bd7ad47eca102e[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sun Jun 4 19:05:05 2023 -0400
+
+    working on signup
+
+[33mcommit 0afe2e3f534e41ac82127d8f3d94351f3f3beeaf[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sun Jun 4 19:04:22 2023 -0400
+
+    working on sighup form
+
+[33mcommit 9d1c1a1e16cd3b509965140b1d0225379c675bd9[m
+Author: Jarel <jarelsanders1986@gmail.com>
+Date:   Sat Jun 3 01:26:23 2023 -0400
+
+    login component front-end complete.

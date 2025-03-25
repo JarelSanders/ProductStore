@@ -1,101 +1,66 @@
-// import { SignUpComponent } from './sign-up.component';
-
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 const collection = require("./mongodb");
-const cors = require('cors')
+const cors = require("cors");
 const bcrypt = require("bcrypt");
 
 const app = express();
-app.use(cors())
 const PORT = 9992;
 
-// Convert data into JSON format
+// Middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Serve static files from the Angular build output
+app.use(express.static(path.join(__dirname, "dist/product-store")));
 
-
-// console.log(__dirname)
-// Serve static files from the 'src' directory
-// app.use(express.static(path.join(__dirname, '../../../../public/')))
-// app.use(express.static(path.join(__dirname, '/src/')));
-app.use(express.static(path.join(__dirname, '/')));
-app.use(express.static(path.join(__dirname, '/src/app/components/sign-up/')));
-// app.use(express.static(path.join(__dirname, '/src/app/components/products/')));
-app.use(express.static(path.join(__dirname, '/src/app/components/main/')));
-app.use(express.static(path.join(__dirname, '/src/app/components/login/')));
-// app.use(express.static(path.join(__dirname, '/src/app/components/sales/')));
-// app.use(express.static(path.join(__dirname, '/src/app/components/shopping-cart/')));
-app.use(express.static(path.join(__dirname, 'dist/product-store')));
-
-
-// app.use('/typeScript', express.static(__dirname, + '/sign-up'))
-
+// API Endpoint for data
 app.get("/data", (req, res) => {
-  // Send some data back to the frontend
-      console.log("Sending data...");
-
+  console.log("Sending data...");
   res.json({ message: "Data response" });
 });
 
+// Serve Angular app for all routes
+const serveAngularApp = (req, res) => {
+  res.sendFile(path.join(__dirname, "dist/product-store", "index.html"));
+};
 
-// Serve the homepage
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/product-store', 'index.html'));
-});
+app.get(
+  ["/", "/main", "/shopping-cart", "/sales", "/products", "/login", "/signup"],
+  serveAngularApp
+);
 
-// Serve the main page
-app.get('/main', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/product-store', 'index.html'));
-});
-
-// Serve the shopping-cart page
-app.get('/shopping-cart', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/product-store', 'index.html'));
-});
-
-// Serve the sales page
-app.get('/sales', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/product-store', 'index.html'));
-});
-
-// Serve the sales page
-app.get('/products', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/product-store', 'index.html'));
-});
-
-// Serve the login page
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/product-store', 'index.html'));
-});
-
-// Serve the signup page
-app.get('/signup', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/product-store', 'index.html'));
-});
 
 // Register user
-app.post('/signup', async (req, res) => {
-    const data = {
-        name: req.body.email,
-        password: req.body.password
-    };
-    const userdata = await collection.insertMany(data);
-    console.log(userdata);
-    res.sendFile(path.join(__dirname, 'dist/product-store', 'index.html'));
-    console.log("test");
-});
+app.post("/signup", async (req, res) => {
+  try {
+    const { email, password } = req.body;
+    const existingUser = await collection.findOne({ email });
 
-// Catch all other routes and return the index file
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/product-store/index.html'));
-});
-
-app.listen(PORT, function check(err) {
-    if (err) {
-        console.log('error');
-    } else {
-        console.log(`started port ${PORT}`);
+    if (existingUser) {
+      return res.status(400).json({ message: "User already exists" });
     }
+
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const user = await collection.create({ email, password: hashedPassword });
+
+    console.log("User saved:", user);
+    res.json({ message: "User registered successfully" });
+  } catch (error) {
+    console.error("Error creating user:", error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+});
+
+// Catch-all route to serve Angular app
+app.get("*", serveAngularApp);
+
+// Start server
+app.listen(PORT, (err) => {
+  if (err) {
+    console.error("Error starting server:", err);
+  } else {
+    console.log(`Server started on port ${PORT}`);
+  }
 });

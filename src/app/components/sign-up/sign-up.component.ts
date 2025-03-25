@@ -64,59 +64,55 @@ export class SignUpComponent implements OnInit {
   }
 
   signUp(event: Event) {
-    event.preventDefault(); // Prevent the default form submission
-
+    event.preventDefault(); 
     console.log('Form submitted');
 
-    this.http.get('/data').subscribe(
-      (data) => {
-        console.log('Received data:', data);
-      },
-      (error) => {
-        console.error('Error occurred:', error);
-      }
-    );
-
-
-
-    let email = <HTMLInputElement>document.getElementById('email');
-    let password = <HTMLInputElement>document.getElementById('password');
-    let confirmpwd = <HTMLInputElement>(
-      document.getElementById('confirm_password')
-    );
-    let checkbox = <HTMLInputElement>document.getElementById('checkbox');
+    // Get input values
+    let email = (<HTMLInputElement>document.getElementById('email')).value;
+    let password = (<HTMLInputElement>document.getElementById('password')).value;
+    let confirmpwd = (<HTMLInputElement>document.getElementById('confirm_password')).value;
     let error = <HTMLElement>document.getElementById('input-error');
 
     // Validate input fields
     if (
-      !email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) ||
-      password.value == '' ||
-      confirmpwd.value == '' ||
-      checkbox.checked == false
+      !email.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) ||
+      password === '' ||
+      confirmpwd === '' ||
+      password !== confirmpwd
     ) {
       $(error).html('Please enter valid credentials').css({
         color: 'red',
         'margin-left': '394px',
       });
-      return false;
-    } else {
-      email.value = '';
-      password.value = '';
-      error.innerText = '';
-      email.style.border = '';
-      password.style.border = '';
+      return;
+    }
+    
 
-      // Make the HTTP call here
-      this.http.get('/data').subscribe(
-        (data) => {
-          console.log('Received data:', data);
+    
+      // Create user data object
+      const userData = {
+        email: email,
+        password: password,
+      };
+
+      // Make the POST request to register the user
+      this.http.post('/signup', userData).subscribe(
+        (response) => {
+          console.log('User registered successfully:', response);
         },
         (error) => {
           console.error('Error occurred:', error);
         }
       );
+      //
 
-      return true;
-    }
+      // return true;
+
   }
+
+
+
+
+
+
 }
