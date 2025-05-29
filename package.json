@@ -1,5 +1,6 @@
 {
   "name": "product-store",
+  "type": "module",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,8 +10,8 @@
     "test": "ng test"
   },
   "engines": {
-  "node": "20.x",
-  "npm": "10.x"
+    "node": "20.x",
+    "npm": "10.x"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +27,7 @@
     "bcrypt": "^5.1.1",
     "braces": ">=3.0.3",
     "cors": "^2.8.5",
+    "dirname": "^0.1.0",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "follow-redirects": ">=1.15.6",

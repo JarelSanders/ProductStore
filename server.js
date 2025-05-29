@@ -1,9 +1,14 @@
-const express = require("express");
-const path = require("path");
-const collection = require("./mongodb");
-const cors = require("cors");
-const bcrypt = require("bcrypt");
+import express from "express";
+import path, { dirname } from "path"; 
+import { fileURLToPath } from "url";
+import { Collection } from "mongodb";
+import cors from "cors";
+import bcrypt from "bcrypt";
+import "./mongodb.js";
+import { User } from "./mongodb.js";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 const app = express();
 const PORT = 9992;
 
@@ -30,7 +35,6 @@ app.get(
   ["/", "/main", "/shopping-cart", "/sales", "/products", "/login", "/signup"],
   serveAngularApp
 );
-
 
 // Register user
 app.post("/signup", async (req, res) => {
